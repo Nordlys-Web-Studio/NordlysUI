@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104.652" height="104.652">
+    <defs>
+        <linearGradient id="a" x2="1" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#6d35c6"/>
+            <stop offset="1" stop-color="#db4ec7"/>
+        </linearGradient>
+    </defs>
+    <g data-name="Group 1" transform="translate(-1055 -505.26)">
+        <rect data-name="Rectangle 1" width="74" height="74" rx="21" transform="rotate(45 -56.24 1589.29)" fill="url(#a)"/>
+        <g data-name="Polygon 1" fill="none">
+            <path d="M1107.5 577l-18.5-32h37z"/>
+            <path d="M1107.5 567.01l9.834-17.01h-19.668l9.834 17.01m0 9.99l-18.5-32h37l-18.5 32z" fill="#fff"/>
+        </g>
+    </g>
+</svg>
