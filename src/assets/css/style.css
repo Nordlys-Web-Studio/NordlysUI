@@ -2414,7 +2414,8 @@ header.head_page h1 {
 .info_c span {
   height: 60px;
   width: 60px;
-  background: #161A23;
+  /* background: #161A23; */
+  background: #000;
   border-radius: 50%;
   display: -webkit-box;
   display: flex;
@@ -2423,7 +2424,7 @@ header.head_page h1 {
   -webkit-box-align: center;
   align-items: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .info_c p {
@@ -4116,4 +4117,12 @@ h2 {
   background: #fff;
   padding: 100px 0px 120px 0px;
   border-radius: 10px;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.fa-telegram{
+	font-size: 20px;
+}
+.telegram-img{
+	width: 60px;
+	height: 60px;
 }
