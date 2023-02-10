@@ -221,9 +221,16 @@ async function renderPriceCalculation(){
 }
 
 document.addEventListener('DOMContentLoaded', async (ev) => {
-    const is_rendered_calculator = await renderPriceCalculator()
-    if(is_rendered_calculator){
-        setCalcButtons()
-        updatedBtns(calc_buttons)
+    const $price_calc_text = document.querySelector('#price_calc_text')
+    try{
+        const is_rendered_calculator = await renderPriceCalculator()
+        if(is_rendered_calculator){
+            setCalcButtons()
+            updatedBtns(calc_buttons)
+        }
+    }
+    catch(error){
+        $price_calc_text.innerHTML = '<h4>Щось пішло не так... :( <br /> Не вдалося завантажити калькулятор. Будь ласка, спробуйте пізніше або <a href="contacts.html">зв`яжіться з нами</a></h4>'
+        console.log(`Failed render price calculation section. Error: ${error}`)
     }
 })
