@@ -31,7 +31,7 @@ for (let i = 0; i < checkItems.length; i++) {
 		} else if (element.classList.contains('item__landing')) {
 			$checkMenu.dataset.siteType = "Landing"
 			AddOrRemoveError($checkMenu)
-			spanCheckItem.innerHTML = "Landind Page"
+			spanCheckItem.innerHTML = "Landing Page"
 		}
 		else {
 			$checkMenu.dataset.siteType = "Corporation"
