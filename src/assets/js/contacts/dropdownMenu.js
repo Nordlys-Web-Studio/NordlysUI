@@ -3,13 +3,20 @@ const checkBlock = document.querySelector('.check-block__item')
 const checkItems = document.querySelectorAll('.check-item')
 let spanCheckItem = document.getElementById('item')
 
-$checkMenu.addEventListener('click', () => {
+$checkMenu.addEventListener('click', (e) => {
 	OpenMenu($checkMenu)
 	OpenMenu(checkBlock)
 
-	// if ($checkMenu.classList.contains('_selected')) {
-	// 	$checkMenu.classList.remove('_error')
-	// }
+})
+//close if click on the another block
+window.addEventListener('load', () => {
+	document.addEventListener('click', (e) => {
+		if (!e.target.closest(".contacts__check") && !e.target.closest(".check-item")) {
+			CloseMenu($checkMenu)
+			CloseMenu(checkBlock)
+		}
+
+	})
 })
 
 for (let i = 0; i < checkItems.length; i++) {
