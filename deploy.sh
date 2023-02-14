@@ -2,7 +2,7 @@ branch=$1
 
 if [[ $branch == "dev" || $branch == "master" ]]
 then
-        ssh root@185.69.153.62 "source /home/nordlys/deploy/deploy.sh $branch"
+        ssh root@185.69.153.62 "source /home/nordlys/deploy/ui/deploy.sh $branch"
 else
         echo "'$branch' is not allowed branch name"
         exit 1
