@@ -156,14 +156,14 @@
 				<div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
 					<div class="numb"><span><img src="assets/img/icons/icon_02.svg"></span>
 						<h3>Обговорення проекту</h3>
-						<p>Детальне опрацювання всіх питань стосовно проекту для найкращої комунікації. І як результат -
+						<p>Детальне опрацювання всіх питань стосовно проекту для найкращої комунікації. Як результат -
 							якісний продукт.</p>
 					</div>
 				</div>
 				<div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
 					<div class="numb"><span><img src="assets/img/icons/icon_03.svg"></span>
 						<h3>Поетапна розробка</h3>
-						<p>Розробка розбивається на частини і виконується також частинами. Зрочно і для замовника, і для
+						<p>Розробка розбивається на частини і виконується поетапно. Зручно і для замовника, і для
 							розробника.</p>
 					</div>
 				</div>
@@ -191,8 +191,8 @@
 			<div class="row">
 				<div class="title_b col-sm-12 col-12">
 					<h2>Що ми робимо</h2>
-					<p>Зверніть увагу, що послуги, ціни, терміни, особливості можуть відрізнятися і будуть оговорені окремо
-						під кожен різний проект.</p>
+					<p>Зверніть увагу, що послуги, ціни, терміни та певні особливості продукту, можуть відрізнятися і будуть оговорені окремо
+						для кожного проекту.</p>
 				</div>
 				<div class="row">
 					<div class="pr col-lg-4 col-md-8 col-12" data-aos="fade-up" data-aos-duration="0">
@@ -223,7 +223,7 @@
 								<h3>Корпоративний сайт</h3>
 								<p>Завдання корпоративного сайту - правильна подача інформації про компанію, її послуги і
 									товари. Такий тип сайту дозволить поліпшити імідж, впізнаваність і комунікацію між
-									користувачами і компанією.</p><span>від $500<sup></sup><i></i></span>
+									користувачами та компанією.</p><span>від $500<sup></sup><i></i></span>
 								<div class="button"><a href="#">Start</a></div>
 							</div>
 						</div>
@@ -332,8 +332,7 @@
 		<div class="container">
 			<div class="title_b">
 				<h2>Етапи розробки</h2>
-				<p>Як і будь яка робота, розробка сайту потребує поетапної роботи. <br> Конкретний напрям - це вже 50%
-					успіху.</p>
+				<p>Як і будь-яка робота, розробка сайту, потребує виконання певних кроків.</p>
 			</div>
 			<div class="row process_c">
 				<div class="process_b sq_on col-lg-4 col-md-4 col-12"><span class="square_one">1</span>
@@ -354,22 +353,22 @@
 						<p>Робимо сайт з інтерактивним дизайном, динамічними елементами і адаптивною версткою.</p>
 					</div>
 				</div>
-				<div class="process_b sq_fo col-lg-4 col-md-4 col-12"><span class="square_four">4</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="0">
-						<h4>Контент</h4>
-						<p>Наповнюємо сайт актуальною інформацією.</p>
+				<div class="process_b sq_s col-lg-4 col-md-4 col-12" id="id_square_six"><span class="square_six">6</span>
+					<div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
+						<h4>Відгук</h4>
+						<p>Гарний відгук клієнта про бездоганно виконану роботу)</p>
 					</div>
 				</div>
-				<div class="process_b sq_fv col-lg-4 col-md-4 col-12"><span class="square_five">5</span>
+				<div class="process_b sq_fv col-lg-4 col-md-4 col-12" id="id_square_five"><span class="square_five">5</span>
 					<div class="b_brc" data-aos="fade-up" data-aos-duration="1000">
 						<h4>Запуск</h4>
 						<p>Підтримуємо сайт, допомагаємо управляти контентом.</p>
 					</div>
 				</div>
-				<div class="process_b sq_s col-lg-4 col-md-4 col-12"><span class="square_six">6</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
-						<h4>Відгук</h4>
-						<p>Гарний відгук клієнту про гарно виконану роботу)</p>
+				<div class="process_b sq_fo col-lg-4 col-md-4 col-12" id="id_square_four"><span class="square_four">4</span>
+					<div class="b_brc" data-aos="fade-up" data-aos-duration="0">
+						<h4>Контент</h4>
+						<p>Наповнюємо сайт актуальною інформацією.</p>
 					</div>
 				</div>
 			</div>
@@ -541,6 +540,21 @@
 					html: `<img src="${el.src ? el.src : '#'}" style="max-width: 128px;"/> <br /> <p class="mt-4">${el.dataset.alert_text ? el.dataset.alert_text : ''}</p>`
 				})
 			})
+		})
+	</script>
+
+	<script>
+		// Section Stages of development. Swap section 4 and 6 if screen width is less than 768px.А
+		document.addEventListener('DOMContentLoaded', ev => {
+			if(window.innerWidth < 768){
+				const $square_six = document.querySelector('#id_square_six')
+				const square_six_html = $square_six.innerHTML
+				const $square_four = document.querySelector('#id_square_four')
+				const $square_five = document.querySelector('#id_square_five')
+				
+				$square_six.parentNode.replaceChild($square_four, $square_six)
+				$square_five.insertAdjacentElement('afterEnd', $square_six)
+			}
 		})
 	</script>
 </body>
