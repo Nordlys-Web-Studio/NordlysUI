@@ -4,19 +4,6 @@ const checkMenu = document.querySelector('.contacts__check')
 
 const buttonSubmit = document.querySelector('.button-form')
 
-// document.addEventListener('DOMContentLoaded',(e)=>{
-// 	const form = document.querySelector(".contacts-form");
-// 	form.addEventListener('submit',()=>{
-// 		if(inputName.value === "" && inputName.value === null){
-// 			inputName.classList.add('_error')
-// 		}if(inputName.value <=0){
-// 			inputName.classList.add('_error')
-// 		}
-// 		else{
-// 			inputName.classList.remove('_error')
-// 		}
-// 	})
-// })
 const form = document.querySelector(".contacts-form");
 const invalidSymbol =
 	/[\/\.\,\'\\\"\`\(\)\-\\₴\=\+\_\?\[\]\{\}\<\>\!\№\;\:\@\#\$\%\^\&\*]/;
@@ -30,21 +17,18 @@ FormValidateInput(form);
 
 async function FormSend(e) {
 	e.preventDefault();
-	let error = FormValidateBtn(form);
+	const error = FormValidateBtn(form);
+	const recaptchaIsValid = reCaptchValidation()
+	console.log(recaptchaIsValid)
+	if(error !== 0 || !recaptchaIsValid){
+		console.log('some error')
+	}
+	else{
+		console.log('send form')
+	}
 	// form.submit()
 }
 
-// function FormValidateBtn(form) {
-// 	let error = 0;
-// 	// const input = document.querySelector(".input-name");
-// 	// FormRemoveError(input);
-// 	if (inputName.value === "" || inputName.value === null) {
-// 		FormAddError(input);
-// 		error++;
-// 		console.log(error)
-// 	}
-// 	return error;
-// }
 function FormValidateBtn(form) {
 	let error = 0;
 	// FormRemoveError(input);
@@ -79,13 +63,6 @@ function FormValidateInput(form) {
 				ValidateName(input);
 				error++;
 			}
-			//------Email-----------
-			// if (input.classList.contains("input-email")) {
-			// 	if (!ValidateEmail(input)) {
-			// 		FormAddError(input);
-			// 		error++;
-			// 	}
-			// }
 		});
 	}
 	return error
@@ -111,26 +88,12 @@ function ValidateName(input) {
 		FormAddError(input);
 	}
 }
-	//------Email-----------
-	// function ValidateEmail(input) {
-	// 	const emailError =
-	// 		/^(([^<>()[\]\\.,;:\s@"\s]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\]\s)|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-	// 	return emailError.test(input.value);
-	// }
-	// //------Password-----------
-	// function ValidatePassword(input) {
-	// 	if (input.value.length < 6) {
-	// 		FormAddError(input);
-	// 	}
-	// 	if (input.value.match(invalidSymbol)) {
-	// 		FormAddError(input);
-	// 	}
-	// }
-	//------Password Confirm-----------
-	// function ValidateConfirm(input) {
-	// 	const password = document.querySelector(".sign-up._password");
 
-	// 	if (input.value !== password.value) {
-	// 		FormAddError(input);
-	// 	}
-	// }
+function reCaptchValidation(){
+	const $recaptch_error = document.querySelector('#id_recaptch_error')
+	const $recaptchaInput = document.querySelector('#id_recaptcha_input')
+
+	$recaptch_error.innerHTML = !$recaptchaInput.value ? "* Це поле обов'язкове" : ''
+	
+	return !$recaptchaInput.value ? false: true
+}

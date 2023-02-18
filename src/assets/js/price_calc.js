@@ -144,7 +144,7 @@ function buildCalcPriceQuery(){
 
 
 async function getColumns(){
-    return await fetch('https://server.dev.nordlys.space/api/v1/price-calculation/columns/', {
+    return await fetch(`${API_URI}/price-calculation/columns/`, {
         method: 'GET'
     })
 }
@@ -183,7 +183,7 @@ async function renderPriceCalculator(){
 }
 
 async function getPriceCalculation(query){
-    return await fetch(`https://server.dev.nordlys.space/api/v1/price-calculation/calculate/${query}`, {
+    return await fetch(`${API_URI}/price-calculation/calculate/${query}`, {
         method: 'GET',
     })
 }

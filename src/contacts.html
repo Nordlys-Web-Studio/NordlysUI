@@ -4,18 +4,25 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Контакти</title>
-	<script src="https://kit.fontawesome.com/4885b8d773.js"></script>
-	<link
-		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Local scripts -->
+	<script src="assets/js/config.js"></script>
+	<script src="assets/js/contacts/reCAPTCHA.js"></script>
+
+	<!-- CDN scripts -->
+	<script src="https://kit.fontawesome.com/4885b8d773.js"></script>
+	
+	<!-- CDN links -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Local links -->
 	<link rel="stylesheet" href="assets/css/libs.min.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/colors.css" />
 	<link rel="shortcut icon" href="assets/img/icons/logo_vio.svg" type="image/x-icon" />
+	
+	<!-- Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
@@ -40,42 +47,16 @@
 			<div class="navbar-nav">
 				<ul>
 					<li><a href="index.html">Головна</a></li>
-					<li><a href="portfolio_two_cols.html">Портфоліо</a>
-						<!-- <div class="dropdown-menu small_menu">
-            <ul>
-              <li><a href="posts.html">Одна колонка</a></li>
-              <li><a href="two_cols.html">Дві колонки</a></li>
-              <li><a href="three_cols.html">Три Колонки</a></li>
-              <li><a href="posts.html">Пости</a></li>
-            </ul>
-          </div> -->
+					<li><a href="portfolio.html">Портфоліо</a>
 					</li>
 					<li><a href="about.html">Про нас</a></li>
 					<li><a href="contacts.html">Контакти</a></li>
           <li class="down_nav"><a href="#">Більше</a>
 						<div class="dropdown-menu w_dropdown">
-							<!-- <div class="mega_m">
-              <h3>Розробка</h3>
-              <ul>
-                <li><a href="posts.html">Сайт-Візитка</a></li>
-                <li><a href="two_cols.html">Landing page</a></li>
-                <li><a href="three_cols.html">Корпоративний сайт</a></li>
-                <li><a href="three_cols.html">Сайт - Каталог</a></li>
-              </ul>
-            </div> -->
-							<!-- <div class="mega_m">
-              <h3>Блог</h3>
-              <ul>
-                <li><a href="right_sidebar_blog.html">Стандарт</a></li>
-                <li><a href="posts.html">Стрічка</a></li>
-                <li><a href="three_cols.html">В три колонки</a></li>
-              </ul>
-            </div> -->
 							<div class="mega_m">
 								<h3>Додаток</h3>
 								<ul>
 									<li><a href="index.html#team_section">Команда</a></li>
-									<!-- <li><a href="single_post_image.html">Відгуки</a></li> -->
 									<li><a href="index.html#price_calc">Калькулятор вартості</a></li>
 									<li><a href="index.html#process_section">Етапи розробки</a></li>
 								</ul>
@@ -155,6 +136,7 @@
 						позначені <span class="color_red">*</span></i>
 				</p>
 				<form method="post" class="contacts-form">
+					<input type="text" id="id_recaptcha_input" name="recaptcha" hidden>
 					<div class="block-for-check"></div>
 					<div class="rpl_b contacts-block">
 						<input placeholder="Ім'я" required class="input input-name" name="name" maxlength="40" />
@@ -206,11 +188,10 @@
 						</div>
 					</div>
 					<textarea placeholder="Повідомлення"></textarea>
-					<!-- <p>
-						<input type="checkbox" value="yes" />
-						<label>Save my name, email, and website in this browser for the next
-							time I comment.</label>
-					</p> -->
+					<div class="d-flex w-100 flex-column align-items-center mt-3">
+						<div id="id_recaptcha_container"></div>
+						<p style="color: red;" class="mb-3" id="id_recaptch_error"></p>
+					</div>
 					<button class="button-form"><a>Відправити</a></button>
 				</form>
 			</div>
@@ -258,15 +239,18 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- Local scripts -->
 	<script src="assets/js/libs.min.js"></script>
 	<script src="assets/js/index.js"></script>
 	<script src="assets/js/navbar/changeActiveLink.js"></script>
 	<script src="assets/js/contacts/dropdownMenu.js"></script>
 	<script src="assets/js/contacts/validationContacts.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-		integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="assets/js/contacts/contacts.js"></script>
+
+	<!-- CDN scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
 </body>
 
 </html>
