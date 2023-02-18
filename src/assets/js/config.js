@@ -1,5 +1,5 @@
-// const SERVER_HOST = 'https://server.dev.nordlys.space'
-const SERVER_HOST = 'http://127.0.0.1:8000'
+const SERVER_HOST = 'https://server.dev.nordlys.space'
+// const SERVER_HOST = 'http://127.0.0.1:8000'
 const API_VERSION = 'v1'
 const API_URL = `/api/${API_VERSION}`
 const API_URI = SERVER_HOST + API_URL
