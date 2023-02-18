@@ -2192,7 +2192,7 @@ transform: translate(-50%,0);
 }
 
 .form_contact form a {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .form_contact .button a:hover {

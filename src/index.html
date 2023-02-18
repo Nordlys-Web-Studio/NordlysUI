@@ -4,13 +4,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Nordlys - Сайт під ключ</title>
+    
+	<!-- Local scripts-->
+	<script src="assets/js/config.js"></script>
+
+	<!-- CDN scripts -->
 	<script src="https://kit.fontawesome.com/4885b8d773.js"></script>
-	<link
-		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- CDS links -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
+	
+	<!-- Local links-->
 	<link rel="stylesheet" href="assets/css/libs.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/colors.css">
@@ -18,7 +24,8 @@
 	<link rel="stylesheet" href="assets/css/price_calc.css">
 	<link rel="stylesheet" href="assets/css/utils.css">
 	<link rel="shortcut icon" href="assets/img/icons/logo_vio.svg" type="image/x-icon">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
+
+	<!-- Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -39,42 +46,16 @@
 			<div class="navbar-nav">
 				<ul>
 					<li><a href="index.html">Головна</a></li>
-					<li><a href="portfolio_two_cols.html">Портфоліо</a>
-						<!-- <div class="dropdown-menu small_menu">
-            <ul>
-              <li><a href="posts.html">Одна колонка</a></li>
-              <li><a href="two_cols.html">Дві колонки</a></li>
-              <li><a href="three_cols.html">Три Колонки</a></li>
-              <li><a href="posts.html">Пости</a></li>
-            </ul>
-          </div> -->
+					<li><a href="portfolio.html">Портфоліо</a>
 					</li>
 					<li><a href="about.html">Про нас</a></li>
 					<li><a href="contacts.html">Контакти</a></li>
 					<li class="down_nav"><a href="#">Більше</a>
 						<div class="dropdown-menu w_dropdown">
-							<!-- <div class="mega_m">
-              <h3>Розробка</h3>
-              <ul>
-                <li><a href="posts.html">Сайт-Візитка</a></li>
-                <li><a href="two_cols.html">Landing page</a></li>
-                <li><a href="three_cols.html">Корпоративний сайт</a></li>
-                <li><a href="three_cols.html">Сайт - Каталог</a></li>
-              </ul>
-            </div> -->
-							<!-- <div class="mega_m">
-              <h3>Блог</h3>
-              <ul>
-                <li><a href="right_sidebar_blog.html">Стандарт</a></li>
-                <li><a href="posts.html">Стрічка</a></li>
-                <li><a href="three_cols.html">В три колонки</a></li>
-              </ul>
-            </div> -->
 							<div class="mega_m">
 								<h3>Додаток</h3>
 								<ul>
 									<li><a href="index.html#team_section">Команда</a></li>
-									<!-- <li><a href="single_post_image.html">Відгуки</a></li> -->
 									<li><a href="index.html#price_calc">Калькулятор вартості</a></li>
 									<li><a href="index.html#process_section">Етапи розробки</a></li>
 								</ul>
@@ -449,54 +430,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- <section class="blog">
-  <div class="container">
-    <div class="title_b">
-      <h2>Блог</h2>
-      <p>Шукай вже існуючі відповіді на вже існуючі питання в нашому блозі. На більшість популярних питань вже є відповідь. Та ніколи не завадить дізнатися щось нове для себе)</p>
-    </div>
-    <div class="posts_s three_cols col-lg-12">
-      <div class="row">
-        <div class="posts_standart"><a href="single_post_image.html">
-          <div class="post_img"><img src="https://via.placeholder.com/1020x1080"></div></a>
-          <div class="wrp_post">
-            <div class="category"><span>Blog</span><span>Construction</span><span>Painting</span></div><a href="single_post_image.html">
-            <h2>Best office in town</h2></a>
-            <p>Velit indoctum assentior duo at. Ea eos doming inermis apeirian, in mel oratio populo aliquip. Vix ipsum graece corrumpit ne, eum an nonumy aliquip, periculis scribentur disputationi sed ne.</p>
-            <div class="bottom_inf">
-              <div class="left_inf"><span>John Doe</span></div>
-              <div class="right_inf"><span>14.07.2019</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="posts_standart"><a href="single_post_image.html">
-          <div class="post_img"><img src="https://via.placeholder.com/1020x1080"></div></a>
-          <div class="wrp_post">
-            <div class="category"><span>Blog</span><span>Construction</span><span>Painting</span></div><a href="single_post_image.html">
-            <h2>Why design is needed</h2></a>
-            <p>Velit indoctum assentior duo at. Ea eos doming inermis apeirian, in mel oratio populo aliquip. Vix ipsum graece corrumpit ne, eum an nonumy aliquip, periculis scribentur disputationi sed ne.</p>
-            <div class="bottom_inf">
-              <div class="left_inf"><span>John Doe</span></div>
-              <div class="right_inf"><span>14.07.2019</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="posts_standart"><a href="single_post_image.html">
-          <div class="post_img"><img src="https://via.placeholder.com/1020x1080"></div></a>
-          <div class="wrp_post">
-            <div class="category"><span>Blog</span><span>Construction</span><span>Painting</span></div><a href="single_post_image.html">
-            <h2>Business Courses</h2></a>
-            <p>Velit indoctum assentior duo at. Ea eos doming inermis apeirian, in mel oratio populo aliquip. Vix ipsum graece corrumpit ne, eum an nonumy aliquip, periculis scribentur disputationi sed ne.</p>
-            <div class="bottom_inf">
-              <div class="left_inf"><span>John Doe</span></div>
-              <div class="right_inf"><span>14.07.2019</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 	<footer id="footer">
 		<div class="container">
 			<div class="brend">
@@ -534,52 +467,23 @@
 		</div>
 	</div>
 
+	<!-- Local scripts -->
 	<script src="assets/js/libs.min.js"></script>
+
+	<!-- CDN scripts -->
+	 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+	<!-- Local Scripts-->
 	<script src="assets/js/index.js"></script>
 	<script src="assets/js/modals.js"></script>
 	<script src="assets/js/price_calc.js"></script>
 	<script src="assets/js/processUpToTopBtn.js"></script>
 	<script src="assets/js/navbar/changeActiveLink.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+	<script src="assets/js/index/index.page.js"></script>
 	<script src="assets/js/callBlock.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-		integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script>
-		$(document).ready(function () {
-			jQuery(function ($) {
-				$("#phone").mask("+380 (99) 99-99-999");
-			});
+	<script src="assets/js/setPhoneMask.js"></script>
 
-		})
-	</script>
-	<script>
-		// sweet alert with technology info
-		const tech_images = document.querySelectorAll('.tech_image')
-		tech_images.forEach(el => {
-			el.addEventListener('click', ev => {
-				Swal.fire({
-					title: `<strong>${el.dataset.alert_title ? el.dataset.alert_title : ''}<\strong>`,
-					html: `<img src="${el.src ? el.src : '#'}" style="max-width: 128px;"/> <br /> <p class="mt-4">${el.dataset.alert_text ? el.dataset.alert_text : ''}</p>`
-				})
-			})
-		})
-	</script>
-
-	<script>
-		// Section Stages of development. Swap section 4 and 6 if screen width is less than 768px.А
-		document.addEventListener('DOMContentLoaded', ev => {
-			if (window.innerWidth < 768) {
-				const $square_six = document.querySelector('#id_square_six')
-				const square_six_html = $square_six.innerHTML
-				const $square_four = document.querySelector('#id_square_four')
-				const $square_five = document.querySelector('#id_square_five')
-
-				$square_six.parentNode.replaceChild($square_four, $square_six)
-				$square_five.insertAdjacentElement('afterEnd', $square_six)
-			}
-		})
-	</script>
 </body>
 
 </html>
