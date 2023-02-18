@@ -54,6 +54,10 @@ async function renderSiteTypes() {
   const siteTypesJson = await siteTypesResponse.json();
   const siteTypesList = siteTypesJson.rows;
 
+  if(siteTypesList.length < 1){
+    throw 'Empty list'
+  }
+
   let siteTypesHtml = "";
   siteTypesList.forEach((siteType) => {
     siteTypesHtml += renderSiteTypeElement(siteType);
