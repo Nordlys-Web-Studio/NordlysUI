@@ -58,10 +58,20 @@
               </div>
             </li>
             <li><a href="faq.html" onclick="return false">FAQ</a></li>
-            <div class="button small line"><a href="tel:+380669175615">Дзвінок</a></div>
+            <div class="button small line"><a>Дзвінок</a></div>
           </ul>
         </div>
       </div>
+		<div class="call call-block">
+			<div class="call-block__body">
+				<form action="#" method="post" class="call-block__content">
+					<i class="fa-solid fa-xmark call-block__close"></i>
+					<h2>Напішіть свій номер і ми обов'язково перетелефонуємо вам!</h2>
+					<input type="tel" required placeholder="+380(99) 99-99-999" id="phone">
+					<button type="submit">Відправити</button>
+				</form>
+			</div>
+		</div>
     </div>
     <header class="head_page"><span class="element_two"><img src="assets/img/cub_two.png" alt=""></span><span class="element_three"><img src="assets/img/cub_three.png" alt=""></span><span class="element_thirteen"><img src="assets/img/icons/cub_thirteen.svg" alt=""></span>
       <div class="container title_h">
@@ -164,5 +174,17 @@
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/navbar/changeActiveLink.js"></script>
+	 <script src="assets/js/callBlock.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+		 integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+		 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	 <script>
+		 $(document).ready(function () {
+			 jQuery(function ($) {
+				 $("#phone").mask("+380 (99) 99-99-999");
+			 });
+ 
+		 })
+	 </script>
   </body>
 </html>
