@@ -399,6 +399,7 @@ header .icon {
   transition: 0.3s;
   border-radius: 50px;
   letter-spacing: 0.075em;
+  cursor: pointer;
 }
 
 .button a:hover {
@@ -4468,4 +4469,80 @@ h2 {
 	.require:nth-child(3) {
 	  right: 4%;
 	}
+ }
+
+/*/////////////////////////// Call-block//////////////////*/
+.call-block {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.4s ease 0s;
+	z-index: 100;
+ }
+ .call-block.open {
+	opacity: 1;
+	visibility: visible;
+ }
+ .call-block.open .call-block__content {
+	opacity: 1;
+	transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+ }
+ .call-block__body {
+	position: relative;
+	display: flex;
+	min-height: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+ }
+ .call-block__content {
+	position: relative;
+	background-color: rgba(22, 26, 35, 0.9);
+	color: #efefef;
+	max-width: 600px;
+	border-radius: 14px;
+	box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+	padding: 50px 70px;
+	opacity: 0;
+	transition: all 0.4s ease 0s;
+	transform: perspective(600px) translate(0px, -100%) rotateX(-45deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+ }
+ .call-block__content h2 {
+	color: #efefef;
+	margin-bottom: 0;
+	text-transform: uppercase;
+ }
+ .call-block__content input {
+	height: 30px;
+ }
+ .call-block__content button {
+	background: linear-gradient(to right, #7231CF 0%, #c33ca6 68%, #ee3fce 100%);
+	color: #fff;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	position: relative;
+	transition: 0.3s;
+	border-radius: 50px;
+	letter-spacing: 0.075em;
+	cursor: pointer;
+ }
+ .call-block__content button:hover {
+	box-shadow: inset 0 0 0 25px #fff;
+	color: #272733;
  }
