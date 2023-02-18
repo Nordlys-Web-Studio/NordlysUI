@@ -8,13 +8,20 @@ buttonCall.addEventListener('click', () => {
 		CloseCallBlock(callBlock)
 	}
 })
-
 window.addEventListener('load', () => {
 	document.addEventListener('click', (e) => {
 		if (!e.target.closest(".button.small") && !e.target.closest(".call-block__content")) {
 			CloseCallBlock(callBlock)
 		}
+		else if(e.target.closest('.call-block__close')){
+			CloseCallBlock(callBlock)
+		}
 
+	})
+	document.addEventListener('keydown',(e)=>{
+		if(e.key === 'Escape'){
+			CloseCallBlock(callBlock)
+		}
 	})
 })
 callBlockContent.addEventListener('submit',(e)=>{

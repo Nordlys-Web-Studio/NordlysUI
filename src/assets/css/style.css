@@ -4485,6 +4485,7 @@ h2 {
 	overflow-x: hidden;
 	transition: all 0.4s ease 0s;
 	z-index: 100;
+	padding: 30px 10px;
  }
  .call-block.open {
 	opacity: 1;
@@ -4500,16 +4501,17 @@ h2 {
 	min-height: 100%;
 	align-items: center;
 	justify-content: center;
-	padding: 30px 10px;
+	padding: 20px 5px;
  }
  .call-block__content {
 	position: relative;
 	background-color: rgba(22, 26, 35, 0.9);
 	color: #efefef;
-	max-width: 600px;
+	max-width: 400px;
+	width: 100%;
 	border-radius: 14px;
 	box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
-	padding: 50px 70px;
+	padding: 50px 20px;
 	opacity: 0;
 	transition: all 0.4s ease 0s;
 	transform: perspective(600px) translate(0px, -100%) rotateX(-45deg);
@@ -4519,10 +4521,26 @@ h2 {
 	align-items: center;
 	gap: 20px;
  }
+ .call-block__close{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	color: #efefef;
+	transition: 0.3s;
+	cursor: pointer;
+ }
  .call-block__content h2 {
 	color: #efefef;
 	margin-bottom: 0;
-	text-transform: uppercase;
+	/* text-transform:; */
+	font-size: 20px;
+	text-align: center;
+ }
+ @media (max-width:578px) {
+	.call-block__content h2{
+		font-size: 18px;
+	}
  }
  .call-block__content input {
 	height: 30px;
