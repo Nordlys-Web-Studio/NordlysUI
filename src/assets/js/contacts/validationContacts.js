@@ -24,7 +24,7 @@ async function FormSend(e) {
 		console.log('some error')
 	}
 	else{
-		console.log('send form')
+		await sendContactsForm()
 	}
 	// form.submit()
 }
