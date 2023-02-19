@@ -159,6 +159,12 @@ async function renderPriceCalculator(){
     else{
         const colums_json = await columns_response.json()
         const columns = colums_json.columns
+        console.log(columns)
+        if(columns.length < 1){
+            price_calc_wrapper.innerHTML = '<h3 style="text-align: center;">Не вдалося завантажити калькулятор</h3>'
+            return false
+        }
+
         let columns_btns_str = ''
         columns.forEach(column => {
             all_columns.push(column.id)

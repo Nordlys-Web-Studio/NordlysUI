@@ -153,8 +153,8 @@
 					<input type="text" id="id_recaptcha_input" name="recaptcha" hidden>
 					<div class="block-for-check"></div>
 					<div class="rpl_b contacts-block">
-						<input placeholder="Ім'я" required class="input input-name" name="name" maxlength="40" />
-						<input placeholder="+380(99) 99-99-999" required type="tel" id="phone" class="input input-phone"
+						<input id="id_user_name" placeholder="Ім'я" required class="input input-name" name="name" maxlength="40" />
+						<input placeholder="+380(99) 99-99-999" required type="tel" id="id_user_phone" class="input input-phone"
 							name="phone" maxlength="40" />
 					</div>
 					<div data-site-type="null" class="contacts-block contacts__check" id="site-type">
@@ -164,7 +164,7 @@
 						<div class="require">*</div>
 					</div>
 					<div class="check-block__item"></div>
-					<textarea placeholder="Повідомлення"></textarea>
+					<textarea id="id_user_message" placeholder="Повідомлення"></textarea>
 					<div class="d-flex w-100 flex-column align-items-center mt-3">
 						<div id="id_recaptcha_container"></div>
 						<p style="color: red;" class="mb-3" id="id_recaptch_error"></p>
@@ -221,17 +221,17 @@
 	<script src="assets/js/libs.min.js"></script>
 
 	<!-- CDN scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-		integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
 
 	<!-- Local scripts -->
 	<script src="assets/js/index.js"></script>
 	<script src="assets/js/navbar/changeActiveLink.js"></script>
 	<script src="assets/js/contacts/dropdownMenu.js"></script>
-	<script src="assets/js/contacts/validationContacts.js"></script>
 	<script src="assets/js/contacts/contacts.js"></script>
+	<script src="assets/js/contacts/validationContacts.js"></script>
 	<script src="assets/js/callBlock.js"></script>
 	<script src="assets/js/setPhoneMask.js"></script>
 

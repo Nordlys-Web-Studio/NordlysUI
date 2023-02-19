@@ -19,12 +19,11 @@ async function FormSend(e) {
 	e.preventDefault();
 	const error = FormValidateBtn(form);
 	const recaptchaIsValid = reCaptchValidation()
-	console.log(recaptchaIsValid)
 	if(error !== 0 || !recaptchaIsValid){
-		console.log('some error')
+		return
 	}
 	else{
-		console.log('send form')
+		await sendContactsForm()
 	}
 	// form.submit()
 }
