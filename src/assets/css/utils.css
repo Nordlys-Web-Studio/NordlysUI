@@ -1,43 +1,50 @@
 /*To Top Button */
 
-.to_top{
-    position: fixed;
-    bottom: 20px;
-    right: -200px;
-    z-index: 9999999;
-    transition: all 0.3s ease 0s;
+.to_top {
+	position: fixed;
+	bottom: 20px;
+	right: -200px;
+	z-index: 9999999;
+	transition: all 0.3s ease 0s;
 }
 
-.to_top_body{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    color: #7231CF;
-    background: #161A23;
-    z-index: 9999;
-    border-radius: 100%;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-    padding: 40px;
-    transition: all 0.2s ease 0s;
+.to_top_body {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	color: #8956cf;
+	background: #181d29;
+	z-index: 9999;
+	border-radius: 100%;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+	padding: 35px;
+	transition: all 0.2s ease 0s;
 }
 
-.to_top_body:hover{
-    cursor: pointer;
-    opacity: 0.9;
-    color: #7939d2;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
+.to_top_body:hover {
+	cursor: pointer;
+	opacity: 0.9;
+	color: #7939d2;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 1);
 }
 
-.to_top_body:hover i{
-    font-size: 56px;
-    transform: translate(0px, -3px) rotateX(20deg);
+.to_top_body:hover i {
+	transform: translate(0px, -2px) scale(1.2);
 }
 
-.to_top_body i{
-    font-size: 56px;
-    transition: 0.2s;
+.to_top_body i {
+	font-size: 40px;
+	transition: 0.2s;
 }
 
+@media (max-width:450px) {
+	.to_top_body i{
+	font-size: 35px;
+	}
+	.to_top_body{
+		padding: 32px;
+	}
+}

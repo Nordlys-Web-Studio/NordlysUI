@@ -31,15 +31,24 @@
 })(jQuery);
 
 
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
-	.test(navigator.userAgent)) {
+if(window.innerWidth < 768){
 	const block6Aos = document.getElementById('id_square_six')
 	const block4Aos = document.getElementById('id_square_four')
 	block4Aos.id = 'id_square_six'
 	document.getElementById('id_square_one').innerHTML = '<span class="square_one">1</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Аналіз</h4> <p>Досліджуємо тематику вашого бізнесу, аналізуємо конкурентів.</p> </div>'
 	document.getElementById('id_square_three').innerHTML = '<span class="square_three">3</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Розробка</h4> <p>Робимо сайт з інтерактивним дизайном, динамічними елементами і адаптивною версткою.</p> </div>'
-	block6Aos.innerHTML = '<span class="square_four">4</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Контент</h4> <p>>Наповнюємо сайт актуальною інформацією</p> </div>'
+	block6Aos.innerHTML = '<span class="square_four">4</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Контент</h4> <p>Наповнюємо сайт актуальною інформацією</p> </div>'
 	block4Aos.innerHTML = '<span class="square_six">6</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Відгук</h4> <p>Гарний відгук клієнта про бездоганно виконану роботу)</p> </div>'
 
 }
+// if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+// 	.test(navigator.userAgent)) {
+// 	const block6Aos = document.getElementById('id_square_six')
+// 	const block4Aos = document.getElementById('id_square_four')
+// 	block4Aos.id = 'id_square_six'
+// 	document.getElementById('id_square_one').innerHTML = '<span class="square_one">1</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Аналіз</h4> <p>Досліджуємо тематику вашого бізнесу, аналізуємо конкурентів.</p> </div>'
+// 	document.getElementById('id_square_three').innerHTML = '<span class="square_three">3</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Розробка</h4> <p>Робимо сайт з інтерактивним дизайном, динамічними елементами і адаптивною версткою.</p> </div>'
+// 	block6Aos.innerHTML = '<span class="square_four">4</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Контент</h4> <p>Наповнюємо сайт актуальною інформацією</p> </div>'
+// 	block4Aos.innerHTML = '<span class="square_six">6</span> <div class="b_brc" data-aos="fade-up" data-aos-duration="1000"> <h4>Відгук</h4> <p>Гарний відгук клієнта про бездоганно виконану роботу)</p> </div>'
+
+// }
