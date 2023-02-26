@@ -79,10 +79,15 @@
 		</div>
 		<div class="call call-block">
 			<div class="call-block__body">
-				<form action="#" method="post" class="call-block__content">
+				<form method="POST" class="call-block__content" onsubmit="return processCallModalRequest(this)">
+					<input type="text" id="id_call_block_recaptcha_input" name="recaptcha" hidden>
 					<i class="fa-solid fa-xmark call-block__close"></i>
 					<h2>Напішіть свій номер і ми обов'язково перетелефонуємо вам!</h2>
 					<input type="tel" required placeholder="+380(99) 99-99-999" id="phone">
+					<div class="d-flex w-100 flex-column align-items-center">
+						<div id="id_call_block_recaptcha_container" style="transform: scale(0.8);"></div>
+						<p style="color: red;" class="mb-3" id="id_call_block_recaptch_error"></p>
+					</div>
 					<button type="submit">Відправити</button>
 				</form>
 			</div>
