@@ -8,7 +8,7 @@ function reCaptchErrorResponse(response){
 	$recaptchaInput.value = ''
 }
 
-var onloadCallback = function() {
+var callBlockOnloadCallback = function() {
     grecaptcha.render('id_call_block_recaptcha_container', {
       'sitekey' : '6LdAMZIkAAAAAIU0ohinOyUuoOe_Y9y43jvl346B',
       'callback': reCaptchResponse,

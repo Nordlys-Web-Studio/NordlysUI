@@ -9,10 +9,12 @@ function reCaptchErrorResponse(response){
 }
 
 var onloadCallback = function() {
-    grecaptcha.render('id_recaptcha_container', {
-      'sitekey' : '6LdAMZIkAAAAAIU0ohinOyUuoOe_Y9y43jvl346B',
-      'callback': reCaptchResponse,
-      'error-callback': reCaptchErrorResponse,
-      'hl': 'uk'
-    });
-  };
+  grecaptcha.render('id_recaptcha_container', {
+    'sitekey' : '6LdAMZIkAAAAAIU0ohinOyUuoOe_Y9y43jvl346B',
+    'callback': reCaptchResponse,
+    'error-callback': reCaptchErrorResponse,
+    'hl': 'uk'
+  });
+
+  callBlockOnloadCallback()
+};
