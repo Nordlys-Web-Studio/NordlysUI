@@ -174,7 +174,7 @@ async function renderPriceCalculator(){
             column.rows.forEach(row => {
                 columns_btns_str += `<div class="calc_button" data-column="${column.id}" data-row="${row.id}">
                                         <div class="calc_button_text">${row.name}</div> 
-                                        <i class="fa-solid fa-info calc_button_desc" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="${row.description}"></i>
+                                        <i style="padding: 0px 10px" class="fa-solid fa-info calc_button_desc" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="${row.description}"></i>
                                     </div>`
             })
 
