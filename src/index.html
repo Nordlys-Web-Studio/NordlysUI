@@ -1,523 +1,839 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nordlys - Сайт під ключ</title>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Nordlys - Сайт під ключ</title>
+    <!-- Google Analytics-->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XKH71DY3JC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<!-- Google Analytics-->
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XKH71DY3JC"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+      gtag("config", "G-XKH71DY3JC");
+    </script>
 
-	gtag('config', 'G-XKH71DY3JC');
-	</script>
+    <!-- Local scripts-->
+    <script src="assets/js/config.js"></script>
 
-	<!-- Local scripts-->
-	<script src="assets/js/config.js"></script>
+    <!-- CDN scripts -->
+    <script src="https://kit.fontawesome.com/4885b8d773.js"></script>
 
-	<!-- CDN scripts -->
-	<script src="https://kit.fontawesome.com/4885b8d773.js"></script>
+    <!-- CDS links -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css"
+    />
 
-	<!-- CDS links -->
-	<link
-		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.min.css">
+    <!-- Local links-->
+    <link rel="stylesheet" href="assets/css/libs.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/colors.css" />
+    <link rel="stylesheet" href="assets/css/modals.css" />
+    <link rel="stylesheet" href="assets/css/price_calc.css" />
+    <link rel="stylesheet" href="assets/css/utils.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/icons/logo_vio.svg"
+      type="image/x-icon"
+    />
 
-	<!-- Local links-->
-	<link rel="stylesheet" href="assets/css/libs.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/colors.css">
-	<link rel="stylesheet" href="assets/css/modals.css">
-	<link rel="stylesheet" href="assets/css/price_calc.css">
-	<link rel="stylesheet" href="assets/css/utils.css">
-	<link rel="shortcut icon" href="assets/img/icons/logo_vio.svg" type="image/x-icon">
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-	<!-- Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-	<div class="top_nav">
-		<div class="container">
-			<div class="left_nav"><span><i class="far fa-question-circle"></i>FAG</span><span><i
-						class="fas fa-map-marker-alt"></i>Ukraine, Lviv</span></div>
-			<div class="right_nav"><span><i class="fa-solid fa-envelope"></i><a href="mailto:nordlys.web.studio@gmail.com"
-						class="color_white">nordlys.web.studio@gmail.com</a></span><span><i class="fas fa-mobile-alt"></i><a
-						href="tel:+380669175615" class="color_white">+380669175615</a></span></div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="menu d-flex justify-content-between align-items-center"><a class="logo" href="index.html"><img
-					src="assets/img/icons/logo_vio.svg">Nordlys</a>
-			<div class="menu__icon"><span></span><span></span><span></span><span></span></div>
-			<div class="navbar-nav">
-				<ul>
-					<li><a href="index.html">Головна</a></li>
-					<li><a href="portfolio.html">Портфоліо</a>
-					</li>
-					<li><a href="about.html">Про нас</a></li>
-					<li><a href="contacts.html">Контакти</a></li>
-					<li class="down_nav"><a href="#">Більше</a>
-						<div class="dropdown-menu w_dropdown">
-							<div class="mega_m">
-								<h3></h3>
-								<ul>
-									<li><a href="index.html#team_section">Команда</a></li>
-									<li><a href="index.html#price_calc">Калькулятор вартості</a></li>
-									<li><a href="index.html#process_section">Етапи розробки</a></li>
-								</ul>
-							</div>
-							<div class="mega_m widget_mega">
-								<h3>Nordlys</h3>
-								<div class="widget_m"><img src="./assets//img/header_widget.png"></div>
-							</div>
-						</div>
-					</li>
-					<li><a href="faq.html" onclick="return false">FAQ</a></li>
-					<div class="button small line"><a>Дзвінок</a></div>
-				</ul>
-			</div>
-		</div>
-		<div class="call call-block">
-			<div class="call-block__body">
-				<form method="POST" class="call-block__content" onsubmit="return processCallModalRequest(this)">
-					<input type="text" id="id_call_block_recaptcha_input" name="recaptcha" hidden>
-					<i class="fa-solid fa-xmark call-block__close"></i>
-					<h2>Напішіть свій номер і ми обов'язково перетелефонуємо вам!</h2>
-					<input type="tel" required placeholder="+380(99) 99-99-999" id="phone">
-					<div class="d-flex w-100 flex-column align-items-center">
-						<div id="id_call_block_recaptcha_container" style="transform: scale(0.8);"></div>
-						<p style="color: red;" class="mb-3" id="id_call_block_recaptch_error"></p>
-					</div>
-					<button type="submit">Відправити</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<header class="slider_head"><span class="element_two"><img src="assets/img/cub_two.png" alt=""></span><span
-			class="element_three"><img src="assets/img/cub_three.png" alt=""></span><span class="element_four"><img
-				src="assets/img/cub_four.png" alt=""></span><span class="element_five"><img src="assets/img/block_five.png"
-				alt=""></span><span class="element_six"><img src="assets/img/cub_six.png" alt=""></span><span
-			class="element_seven"><img src="assets/img/cub_seven.png" alt=""></span><span class="element_eight"><img
-				src="assets/img/cub_eight.png" alt=""></span><span class="element_nine"><img src="assets/img/cub_four.png"
-				alt=""></span>
-		<div class="icon">
-			<div class="row flex-column align-items-center justify-content-center h-100">
-				<!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-				<!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
-				<a target="_blank" href="https://t.me/+QGfnNhgJ31Q3ZWJi" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-				<!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
-			</div>
-		</div>
-		<div class="container">
-			<div class="swiper-container">
-				<div class="swiper-wrapper head_slider">
-					<div class="swiper-slide">
-						<div class="tit_img"><img src="./assets/img/image_header_1.png"></div>
-						<div class="title">
-							<div class="box">
-								<h1>Сайт під ключ</h1>
-							</div>
-							<p>Створюємо продукти, які приємно здивують Вас, і ваших клієнтів. Швидко. Якісно. Ефективно.</p>
-							<div class="button"><a href="contacts.html#id_contacts_form">Замовити</a></div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="tit_img"><img src="./assets/img/image_header_3.png"></div>
-						<div class="title">
-							<div class="box">
-								<h1>Продуктивна співпраця</h1>
-							</div>
-							<p>Сайт створено під Вашим пильним наглядом. Для нас важливо, щоб наша розробка ідеально підходила
-								саме Вам!</p>
-							<div class="button"><a href="#process_section">Етапи розробки</a></div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="tit_img"><img src="./assets/img/image_header_2.png"></div>
-						<div class="title">
-							<div class="box">
-								<h1>Досвід та бажання</h1>
-							</div>
-							<p>Разом ми співпрацювали у багатьох проєктах і наш склад залишається незмінним! Бажаня вчитись,
-								працювати і створювати - обов'язкові якості кожного члена нашої команди. Саме тому, кожного разу
-								ми викладаємось на повну!</p>
-							<div class="button"><a href="about.html">Про нас</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-pagination"></div>
-	</header>
-	<section class="services">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4" data-aos="fade-up" data-aos-duration="0">
-					<div class="numb"><span><img src="assets/img/icons/icon_01.svg"></span>
-						<h3>Сайт під ключ</h3>
-						<p>Повністю автономна робота сайту після розробки. Не потребує постійного контролю від розробників.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-					<div class="numb"><span><img src="assets/img/icons/icon_02.svg"></span>
-						<h3>Обговорення проекту</h3>
-						<p>Детальне опрацювання всіх питань стосовно проекту для найкращої комунікації. Як результат -
-							якісний продукт.</p>
-					</div>
-				</div>
-				<div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
-					<div class="numb"><span><img src="assets/img/icons/icon_03.svg"></span>
-						<h3>Поетапна розробка</h3>
-						<p>Розробка розбивається на частини і виконується поетапно. Зручно і для замовника, і для
-							розробника.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="welcome_b">
-		<div class="welcome row">
-			<div class="img_b col-lg-6 p-0"><img src="./assets/img/img02_l.jpg"></div>
-			<div class="bg col-lg-6">
-				<div class="cont_inf">
-					<h2>Зручність клієнта - наша прерогатива</h2>
-					<p>Калькулятор вартості нашої веб-студії допоможе вам швидко та зручно розрахувати вартість створення сайту. Ви зможете обрати потрібні опції та отримати орієнтовну вартість проекту в режимі онлайн. Ми завжди готові надати детальну консультацію та відповісти на всі ваші запитання.</p>
-					<div class="button"><a href="#price_calc">Калькулятор вартості</a></div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="products"><span class="element_ten"><img src="assets/img/icons/cub_ten.svg" alt=""></span><span
-			class="element_eleven"><img src="assets/img/icons/cub_eleven.svg" alt=""></span><span
-			class="element_twelve"><img src="assets/img/icons/cub_twelve.svg" alt=""></span>
-		<div class="container">
-			<div class="row">
-				<div class="title_b col-sm-12 col-12">
-					<h2>Що ми робимо</h2>
-					<p>Зверніть увагу, що послуги, ціни, терміни та певні особливості продукту, можуть відрізнятися і будуть
-						оговорені окремо
-						для кожного проекту.</p>
-				</div>
-				<div class="row">
-					<div class="pr col-lg-4 col-md-8 col-12" data-aos="fade-up" data-aos-duration="0">
-						<div class="product_bl"><img src="assets/img/site_visitka_1.png" alt="">
-							<div class="product_cont">
-								<h3>Сайт - Візитка</h3>
-								<p>Розробка сайту-візитки, як правило, відбувається швидко завдяки малій кількості сторінок. Ви
-									обговорюєте з нами тематику, стверджуєте макет і в короткий термін отримуєте готовий ресурс.
-								</p><span>від $200<sup></sup><i></i></span>
-								<div class="button"><a href="contacts.html#id_contacts_form">Start</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="pr col-lg-4 col-md-8 col-12" data-aos="fade-up" data-aos-duration="1000">
-						<div class="product_bl"><img src="assets/img/landing_page_1.png" alt="">
-							<div class="product_cont">
-								<h3>Landing Page</h3>
-								<p>Landing page - це односторінкова посадкова сторінка, завдання якої спонукати користувача
-									зробити цільову дію. Така дія може бути спрямована на оформлення замовлення, онлайн оплату
-									або просто отримання даних потенційного клієнта.</p><span>від $150<sup></sup><i></i></span>
-								<div class="button"><a href="contacts.html#id_contacts_form">Start</a></div>
-							</div>
-						</div>
-					</div>
-					<div class="pr col-lg-4 col-md-8 col-12" data-aos="fade-up" data-aos-duration="2000">
-						<div class="product_bl"><img src="assets/img/corp_site_1.jpg" alt="">
-							<div class="product_cont">
-								<h3>Корпоративний сайт</h3>
-								<p>Завдання корпоративного сайту - правильна подача інформації про компанію, її послуги і
-									товари. Такий тип сайту дозволить поліпшити імідж, впізнаваність і комунікацію між
-									користувачами та компанією.</p><span>від $500<sup></sup><i></i></span>
-								<div class="button"><a href="contacts.html#id_contacts_form">Start</a></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="work">
-		<div class="container">
-			<div class="title_b col-lg-12 col-md-12 p-0">
-				<h2>Останні роботи</h2>
-			</div>
-			<div class="wrk">
-				<div class="img_wr"><img src="./assets/img/projects/ev1.png"></div>
-				<div class="name_wr">
-					<h3>Останні проекти</h3><span>Наше портфоліо - це наша гордість та візитна картка. Ми демонструємо наші кращі проекти, щоб ви могли оцінити нашу творчість та експертизу. Кожен проект - це втілення наших ідей та унікального підходу до веб-розробки. Ми докладаємо максимум зусиль, щоб зробити наших клієнтів щасливими та успішними.</span>
-					<p></p>
-					<div class="icon i_two col-lg-4 col-md-12">
-						<div class="row align-items-center">
-							<!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <body>
+    <div class="top_nav">
+      <div class="container">
+        <div class="left_nav">
+          <span><i class="far fa-question-circle"></i>FAG</span
+          ><span><i class="fas fa-map-marker-alt"></i>Ukraine, Lviv</span>
+        </div>
+        <div class="right_nav">
+          <span
+            ><i class="fa-solid fa-envelope"></i
+            ><a href="mailto:nordlys.web.studio@gmail.com" class="color_white"
+              >nordlys.web.studio@gmail.com</a
+            ></span
+          ><span
+            ><i class="fas fa-mobile-alt"></i
+            ><a href="tel:+380669175615" class="color_white"
+              >+380669175615</a
+            ></span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="menu d-flex justify-content-between align-items-center">
+        <a class="logo" href="index.html"
+          ><img src="assets/img/icons/logo_vio.svg" />Nordlys</a
+        >
+        <div class="menu__icon">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="navbar-nav">
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="portfolio.html">Портфоліо</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li class="down_nav">
+              <a href="#">Більше</a>
+              <div class="dropdown-menu w_dropdown">
+                <div class="mega_m">
+                  <h3></h3>
+                  <ul>
+                    <li><a href="index.html#team_section">Команда</a></li>
+                    <li>
+                      <a href="index.html#price_calc">Калькулятор вартості</a>
+                    </li>
+                    <li>
+                      <a href="index.html#process_section">Етапи розробки</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mega_m widget_mega">
+                  <h3>Nordlys</h3>
+                  <div class="widget_m">
+                    <img src="./assets//img/header_widget.png" />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="faq.html" onclick="return false">FAQ</a></li>
+            <div class="button small line"><a>Дзвінок</a></div>
+          </ul>
+        </div>
+      </div>
+      <div class="call call-block">
+        <div class="call-block__body">
+          <form
+            method="POST"
+            class="call-block__content"
+            onsubmit="return processCallModalRequest(this)"
+          >
+            <input
+              type="text"
+              id="id_call_block_recaptcha_input"
+              name="recaptcha"
+              hidden
+            />
+            <i class="fa-solid fa-xmark call-block__close"></i>
+            <h2>Напішіть свій номер і ми обов'язково перетелефонуємо вам!</h2>
+            <input
+              type="tel"
+              required
+              placeholder="+380(99) 99-99-999"
+              id="phone"
+            />
+            <div class="d-flex w-100 flex-column align-items-center">
+              <div
+                id="id_call_block_recaptcha_container"
+                style="transform: scale(0.8)"
+              ></div>
+              <p
+                style="color: red"
+                class="mb-3"
+                id="id_call_block_recaptch_error"
+              ></p>
+            </div>
+            <button type="submit">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header class="slider_head">
+      <span class="element_two"
+        ><img src="assets/img/cub_two.png" alt="" /></span
+      ><span class="element_three"
+        ><img src="assets/img/cub_three.png" alt="" /></span
+      ><span class="element_four"
+        ><img src="assets/img/cub_four.png" alt="" /></span
+      ><span class="element_five"
+        ><img src="assets/img/block_five.png" alt="" /></span
+      ><span class="element_six"
+        ><img src="assets/img/cub_six.png" alt="" /></span
+      ><span class="element_seven"
+        ><img src="assets/img/cub_seven.png" alt="" /></span
+      ><span class="element_eight"
+        ><img src="assets/img/cub_eight.png" alt="" /></span
+      ><span class="element_nine"
+        ><img src="assets/img/cub_four.png" alt=""
+      /></span>
+      <div class="icon">
+        <div
+          class="row flex-column align-items-center justify-content-center h-100"
+        >
+          <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+          <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
+          <a
+            target="_blank"
+            href="https://t.me/+QGfnNhgJ31Q3ZWJi"
+            title="Telegram"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
+          <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="swiper-container">
+          <div class="swiper-wrapper head_slider">
+            <div class="swiper-slide">
+              <div class="tit_img">
+                <img src="./assets/img/image_header_1.png" />
+              </div>
+              <div class="title">
+                <div class="box">
+                  <h1>Сайт під ключ</h1>
+                </div>
+                <p>
+                  Створюємо продукти, які приємно здивують Вас, і ваших
+                  клієнтів. Швидко. Якісно. Ефективно.
+                </p>
+                <div class="button">
+                  <a href="contacts.html#id_contacts_form">Замовити</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tit_img">
+                <img src="./assets/img/image_header_3.png" />
+              </div>
+              <div class="title">
+                <div class="box">
+                  <h1>Продуктивна співпраця</h1>
+                </div>
+                <p>
+                  Сайт створено під Вашим пильним наглядом. Для нас важливо, щоб
+                  наша розробка ідеально підходила саме Вам!
+                </p>
+                <div class="button">
+                  <a href="#process_section">Етапи розробки</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tit_img">
+                <img src="./assets/img/image_header_2.png" />
+              </div>
+              <div class="title">
+                <div class="box">
+                  <h1>Досвід та бажання</h1>
+                </div>
+                <p>
+                  Разом ми співпрацювали у багатьох проєктах і наш склад
+                  залишається незмінним! Бажаня вчитись, працювати і створювати
+                  - обов'язкові якості кожного члена нашої команди. Саме тому,
+                  кожного разу ми викладаємось на повну!
+                </p>
+                <div class="button"><a href="about.html">Про нас</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </header>
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="0">
+            <div class="numb">
+              <span><img src="assets/img/icons/icon_01.svg" /></span>
+              <h3>Сайт під ключ</h3>
+              <p>
+                Повністю автономна робота сайту після розробки. Не потребує
+                постійного контролю від розробників.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="numb">
+              <span><img src="assets/img/icons/icon_02.svg" /></span>
+              <h3>Обговорення проекту</h3>
+              <p>
+                Детальне опрацювання всіх питань стосовно проекту для найкращої
+                комунікації. Як результат - якісний продукт.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="numb">
+              <span><img src="assets/img/icons/icon_03.svg" /></span>
+              <h3>Поетапна розробка</h3>
+              <p>
+                Розробка розбивається на частини і виконується поетапно. Зручно
+                і для замовника, і для розробника.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="welcome_b">
+      <div class="welcome row">
+        <div class="img_b col-lg-6 p-0">
+          <img src="./assets/img/img02_l.jpg" />
+        </div>
+        <div class="bg col-lg-6">
+          <div class="cont_inf">
+            <h2>Зручність клієнта - наша прерогатива</h2>
+            <p>
+              Калькулятор вартості нашої веб-студії допоможе вам швидко та
+              зручно розрахувати вартість створення сайту. Ви зможете обрати
+              потрібні опції та отримати орієнтовну вартість проекту в режимі
+              онлайн. Ми завжди готові надати детальну консультацію та
+              відповісти на всі ваші запитання.
+            </p>
+            <div class="button">
+              <a href="#price_calc">Калькулятор вартості</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <span class="element_ten"
+        ><img src="assets/img/icons/cub_ten.svg" alt="" /></span
+      ><span class="element_eleven"
+        ><img src="assets/img/icons/cub_eleven.svg" alt="" /></span
+      ><span class="element_twelve"
+        ><img src="assets/img/icons/cub_twelve.svg" alt=""
+      /></span>
+      <div class="container">
+        <div class="row">
+          <div class="title_b col-sm-12 col-12">
+            <h2>Що ми робимо</h2>
+            <p>
+              Зверніть увагу, що послуги, ціни, терміни та певні особливості
+              продукту, можуть відрізнятися і будуть оговорені окремо для
+              кожного проекту.
+            </p>
+          </div>
+          <div class="row">
+            <div
+              class="pr col-lg-4 col-md-8 col-12"
+              data-aos="fade-up"
+              data-aos-duration="0"
+            >
+              <div class="product_bl">
+                <img src="assets/img/site_visitka_1.png" alt="" />
+                <div class="product_cont">
+                  <h3>Сайт - Візитка</h3>
+                  <p>
+                    Розробка сайту-візитки, як правило, відбувається швидко
+                    завдяки малій кількості сторінок. Ви обговорюєте з нами
+                    тематику, стверджуєте макет і в короткий термін отримуєте
+                    готовий ресурс.
+                  </p>
+                  <span>від $200<sup></sup><i></i></span>
+                  <div class="button">
+                    <a href="contacts.html#id_contacts_form">Start</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pr col-lg-4 col-md-8 col-12"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="product_bl">
+                <img src="assets/img/landing_page_1.png" alt="" />
+                <div class="product_cont">
+                  <h3>Landing Page</h3>
+                  <p>
+                    Landing page - це односторінкова посадкова сторінка,
+                    завдання якої спонукати користувача зробити цільову дію.
+                    Така дія може бути спрямована на оформлення замовлення,
+                    онлайн оплату або просто отримання даних потенційного
+                    клієнта.
+                  </p>
+                  <span>від $150<sup></sup><i></i></span>
+                  <div class="button">
+                    <a href="contacts.html#id_contacts_form">Start</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pr col-lg-4 col-md-8 col-12"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <div class="product_bl">
+                <img src="assets/img/corp_site_1.jpg" alt="" />
+                <div class="product_cont">
+                  <h3>Корпоративний сайт</h3>
+                  <p>
+                    Завдання корпоративного сайту - правильна подача інформації
+                    про компанію, її послуги і товари. Такий тип сайту дозволить
+                    поліпшити імідж, впізнаваність і комунікацію між
+                    користувачами та компанією.
+                  </p>
+                  <span>від $500<sup></sup><i></i></span>
+                  <div class="button">
+                    <a href="contacts.html#id_contacts_form">Start</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <div class="container">
+        <div class="title_b col-lg-12 col-md-12 p-0">
+          <h2>Останні роботи</h2>
+        </div>
+        <div class="wrk">
+          <div class="img_wr"><img src="./assets/img/projects/ev1.png" /></div>
+          <div class="name_wr">
+            <h3>Останні проекти</h3>
+            <span
+              >Наше портфоліо - це наша гордість та візитна картка. Ми
+              демонструємо наші кращі проекти, щоб ви могли оцінити нашу
+              творчість та експертизу. Кожен проект - це втілення наших ідей та
+              унікального підходу до веб-розробки. Ми докладаємо максимум
+              зусиль, щоб зробити наших клієнтів щасливими та успішними.</span
+            >
+            <p></p>
+            <div class="icon i_two col-lg-4 col-md-12">
+              <div class="row align-items-center">
+                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
 							<a href="#"><i class="fab fa-twitter"></i></a>
 							<a href="#"><i class="fab fa-youtube"></i></a>
 							<a href="#"><i class="class fab fa-behance"></i></a> -->
-							<a target="_blank" href="https://t.me/+QGfnNhgJ31Q3ZWJi" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="img_w">
-				<div class="row">
-					<div class="img_portf"><a data-fancybox="gallery" href="./assets/img/projects/rentcity.png">
-							<div class="hover_info"><i class="fas fa-search"></i></div><img
-								src="./assets/img/projects/rentcity.png">
-						</a></div>
-					<div class="img_portf"><a data-fancybox="gallery" href="./assets/img/projects/ev1.png">
-							<div class="hover_info"><i class="fas fa-search"></i></div><img
-								src="./assets/img/projects/ev1.png">
-						</a></div>
-					<div class="img_portf"><a data-fancybox="gallery" href="./assets/img/projects/lazystar.png">
-							<div class="hover_info"><i class="fas fa-search"></i></div><img
-								src="./assets/img/projects/lazystar.png">
-						</a></div>
-					<div class="img_portf"><a data-fancybox="gallery" href="./assets/img/projects/rivne.png">
-							<div class="hover_info"><i class="fas fa-search"></i></div><img
-								src="./assets/img/projects/rivne.png">
-						</a></div>
-					<div class="img_portf"><a data-fancybox="gallery" href="./assets/img/projects/ksdieselparts.png">
-							<div class="hover_info"><i class="fas fa-search"></i></div><img
-								src="./assets/img/projects/ksdieselparts.png">
-						</a></div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <a
+                  target="_blank"
+                  href="https://t.me/+QGfnNhgJ31Q3ZWJi"
+                  title="Telegram"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img_w">
+          <div class="row">
+            <div class="img_portf">
+              <a
+                data-fancybox="gallery"
+                href="./assets/img/projects/rentcity.png"
+              >
+                <div class="hover_info"><i class="fas fa-search"></i></div>
+                <img src="./assets/img/projects/rentcity.png" />
+              </a>
+            </div>
+            <div class="img_portf">
+              <a data-fancybox="gallery" href="./assets/img/projects/ev1.png">
+                <div class="hover_info"><i class="fas fa-search"></i></div>
+                <img src="./assets/img/projects/ev1.png" />
+              </a>
+            </div>
+            <div class="img_portf">
+              <a
+                data-fancybox="gallery"
+                href="./assets/img/projects/lazystar.png"
+              >
+                <div class="hover_info"><i class="fas fa-search"></i></div>
+                <img src="./assets/img/projects/lazystar.png" />
+              </a>
+            </div>
+            <div class="img_portf">
+              <a data-fancybox="gallery" href="./assets/img/projects/rivne.png">
+                <div class="hover_info"><i class="fas fa-search"></i></div>
+                <img src="./assets/img/projects/rivne.png" />
+              </a>
+            </div>
+            <div class="img_portf">
+              <a
+                data-fancybox="gallery"
+                href="./assets/img/projects/ksdieselparts.png"
+              >
+                <div class="hover_info"><i class="fas fa-search"></i></div>
+                <img src="./assets/img/projects/ksdieselparts.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section class="technologies">
-		<div class="container">
-			<div class="title_b col-lg-12 col-md-12 p-0">
-				<h2>Передові технології</h2>
-				<p>Використання передових і сучасних технологій є однією з ключових складових якісного продукту. Будьте
-					впевнені в надійності вашої системи.</p>
-			</div>
-			<div class="row">
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="0">
-					<img class="tech_image" src="./assets/img/techtologies/python.png" alt="Python" title="Python"
-						data-alert_title="Елегантний Python" data-alert_text="Python відноситься до тих рідкісних мов програмування які можуть бути визнані простими і в той же час потужними. Вона має ефективні високорівневі структури даних і простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис мови і динамічна типізація поєднані з командно-інтерпретованою природою роблять Python ідеальною мовою для написання скриптів та швидкої розробки програм в багатьох сферах та на різних платформах.">
-				</div>
+    <section class="technologies">
+      <div class="container">
+        <div class="title_b col-lg-12 col-md-12 p-0">
+          <h2>Передові технології</h2>
+          <p>
+            Використання передових і сучасних технологій є однією з ключових
+            складових якісного продукту. Будьте впевнені в надійності вашої
+            системи.
+          </p>
+        </div>
+        <div class="row">
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="0">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/python.png"
+              alt="Python"
+              title="Python"
+              data-alert_title="Елегантний Python"
+              data-alert_text="Python відноситься до тих рідкісних мов програмування які можуть бути визнані простими і в той же час потужними. Вона має ефективні високорівневі структури даних і простий, але ефективний підхід до об’єктно-орієнтованого програмування. Елегантний синтаксис мови і динамічна типізація поєднані з командно-інтерпретованою природою роблять Python ідеальною мовою для написання скриптів та швидкої розробки програм в багатьох сферах та на різних платформах."
+            />
+          </div>
 
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="300">
-					<img class="tech_image" src="./assets/img/techtologies/django.png" alt="Django" title="Django"
-						data-alert_title="Об`ємний Django" data-alert_text="Django - відкритий фреймворк для створення веб додатків, написаний мовою програмування Python. Веб фреймворк - набір компонентів, які допомагають розробляти веб-сайти швидше і простіше. При побудові веб-сайту, ви завжди потребуєте схожого набору компонентів: спосіб управління авторизацією користувача (створення акаунту, вхід, вихід), панель управління, форми, спосіб завантажити файли, тощо. На щастя для вас інші люди вже давно помітили, що веб розробники зіштовхуються з подібними проблемами під час розробки нового сайту, отже вони об'єднались в команду і створили фреймворки (Django є одним з таких), що дають вам вже готові до використання компоненти.">
-				</div>
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="300">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/django.png"
+              alt="Django"
+              title="Django"
+              data-alert_title="Об`ємний Django"
+              data-alert_text="Django - відкритий фреймворк для створення веб додатків, написаний мовою програмування Python. Веб фреймворк - набір компонентів, які допомагають розробляти веб-сайти швидше і простіше. При побудові веб-сайту, ви завжди потребуєте схожого набору компонентів: спосіб управління авторизацією користувача (створення акаунту, вхід, вихід), панель управління, форми, спосіб завантажити файли, тощо. На щастя для вас інші люди вже давно помітили, що веб розробники зіштовхуються з подібними проблемами під час розробки нового сайту, отже вони об'єднались в команду і створили фреймворки (Django є одним з таких), що дають вам вже готові до використання компоненти."
+            />
+          </div>
 
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="600">
-					<img class="tech_image" src="./assets/img/techtologies/vue.png" alt="Vue" title="Vue"
-						data-alert_title="Сильний Vue" data-alert_text="Vue є величезною частиною JavaScript. Це життєво важливий компонент, який слід враховувати в першу чергу. Будучи однією з найпопулярніших інтерфейсних фреймворків сьогодні на ринку, Vue привернув увагу багатьох розробників та ІТ-експертів. Він є легшою та зручнішою мережею інтерфейсу, яка не містить складних плагінів, присутніх в інших фреймворках. Простими словами, це те, як ви створюєте речення та надаєте їм значення. Це надзвичайно адаптивний інструмент, який не відповідає жодним конкретним складним шарам.">
-				</div>
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="600">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/vue.png"
+              alt="Vue"
+              title="Vue"
+              data-alert_title="Сильний Vue"
+              data-alert_text="Vue є величезною частиною JavaScript. Це життєво важливий компонент, який слід враховувати в першу чергу. Будучи однією з найпопулярніших інтерфейсних фреймворків сьогодні на ринку, Vue привернув увагу багатьох розробників та ІТ-експертів. Він є легшою та зручнішою мережею інтерфейсу, яка не містить складних плагінів, присутніх в інших фреймворках. Простими словами, це те, як ви створюєте речення та надаєте їм значення. Це надзвичайно адаптивний інструмент, який не відповідає жодним конкретним складним шарам."
+            />
+          </div>
 
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="900">
-					<img class="tech_image" src="./assets/img/techtologies/react.png" alt="React" title="React"
-						data-alert_title="Великий React" data-alert_text="React - це найпопулярніша в світі JavaScript-бібліотека. Але ця бібліотека хороша не тому, що популярна, а тому популярна, що хороша. Коли з'явилася бібліотека React - це на фундаментальному рівні змінило те, як працюють JavaScript-фреймворки і бібліотеки. Завдяки React у фронтенд-екосистемі JavaScript з'явилася абсолютно нова архітектура - Flux.">
-				</div>
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="900">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/react.png"
+              alt="React"
+              title="React"
+              data-alert_title="Великий React"
+              data-alert_text="React - це найпопулярніша в світі JavaScript-бібліотека. Але ця бібліотека хороша не тому, що популярна, а тому популярна, що хороша. Коли з'явилася бібліотека React - це на фундаментальному рівні змінило те, як працюють JavaScript-фреймворки і бібліотеки. Завдяки React у фронтенд-екосистемі JavaScript з'явилася абсолютно нова архітектура - Flux."
+            />
+          </div>
 
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="1200">
-					<img class="tech_image" src="./assets/img/techtologies/redis.png" alt="Redis" title="Redis"
-						data-alert_title="Швидкий Redis" data-alert_text="Використовуйте керовану платформу хмарного хостингу Redis для кращої доступності, продуктивності та безпеки. Redis — це база даних із відкритим кодом у пам’яті, яка активно використовується як кеш. Він використовується скрізь і йому довіряють понад 7000 організацій, включаючи Microsoft, Vodafone, Mastercard тощо. І не лише в корпоративних програмах, але й на сайтах WordPress.">
-				</div>
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="1200">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/redis.png"
+              alt="Redis"
+              title="Redis"
+              data-alert_title="Швидкий Redis"
+              data-alert_text="Використовуйте керовану платформу хмарного хостингу Redis для кращої доступності, продуктивності та безпеки. Redis — це база даних із відкритим кодом у пам’яті, яка активно використовується як кеш. Він використовується скрізь і йому довіряють понад 7000 організацій, включаючи Microsoft, Vodafone, Mastercard тощо. І не лише в корпоративних програмах, але й на сайтах WordPress."
+            />
+          </div>
 
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="1500">
-					<img class="tech_image" src="./assets/img/techtologies/postgresql.png" alt="Потужний PostgreSQL"
-						title="PostgreSQL" data-alert_title="Потужний PostgreSQL" data-alert_text="PostgreSQL - це система управління об'єктно-реляційними базами даних з відкритим кодом, ORDBMS, яка не належить або контролюється однією компанією чи особою. Оскільки програмне забезпечення postgresSQL є відкритим кодом, ним керують здебільшого за допомогою скоординованих онлайн-спроб активним світовим співтовариством розробників, ентузіастів та інших добровольців. PostgresSQL підтримує майже всі функції реляційних баз даних і пропонує кілька незвичайних функцій, які зазвичай відсутні в інших двигунах RDBMS.">
-				</div>
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="1500">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/postgresql.png"
+              alt="Потужний PostgreSQL"
+              title="PostgreSQL"
+              data-alert_title="Потужний PostgreSQL"
+              data-alert_text="PostgreSQL - це система управління об'єктно-реляційними базами даних з відкритим кодом, ORDBMS, яка не належить або контролюється однією компанією чи особою. Оскільки програмне забезпечення postgresSQL є відкритим кодом, ним керують здебільшого за допомогою скоординованих онлайн-спроб активним світовим співтовариством розробників, ентузіастів та інших добровольців. PostgresSQL підтримує майже всі функції реляційних баз даних і пропонує кілька незвичайних функцій, які зазвичай відсутні в інших двигунах RDBMS."
+            />
+          </div>
 
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="1800">
-					<img class="tech_image" src="./assets/img/techtologies/bootstrap.png" alt="Bootstrap" title="Bootstrap"
-						data-alert_title="Гнучкий Bootstrap" data-alert_text="Bootstrap входить в число найпопулярніших фреймворків HTML, CSS і JS. Це набір інструментів для створення сайтів, який включає в себе елементи типографіки, готові веб-форми, кнопки, меню та інші веб-елементи. Основним напрямком фреймворку визнана розробка складних мобільних проектів. Головна особливість Bootstrap – що це не тільки CSS фреймворк, але і Javascript-бібліотека. У ньому розроблені готові до використання стилі і скрипти, підключення яких до документа відбувається прописуванням потрібних класів і атрибутів HTML-елементів.">
-				</div>
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="1800">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/bootstrap.png"
+              alt="Bootstrap"
+              title="Bootstrap"
+              data-alert_title="Гнучкий Bootstrap"
+              data-alert_text="Bootstrap входить в число найпопулярніших фреймворків HTML, CSS і JS. Це набір інструментів для створення сайтів, який включає в себе елементи типографіки, готові веб-форми, кнопки, меню та інші веб-елементи. Основним напрямком фреймворку визнана розробка складних мобільних проектів. Головна особливість Bootstrap – що це не тільки CSS фреймворк, але і Javascript-бібліотека. У ньому розроблені готові до використання стилі і скрипти, підключення яких до документа відбувається прописуванням потрібних класів і атрибутів HTML-елементів."
+            />
+          </div>
 
-				<div class="img_tech" data-aos="fade-up" data-aos-duration="2100">
-					<img class="tech_image" src="./assets/img/techtologies/javascript.png" alt="Javascript"
-						title="Javascript" data-alert_title="Дивовижний Javascript" data-alert_text="JavaScript (JS) — динамічна  мова програмування. Найчастіше використовується для створення веб сторінок, що надає можливість взаємодіяти з користувачем, керувати браузером, асинхронно обмінюватися даними з сервером, змінювати структуру та зовнішній вигляд вебсторінки. JavaScript класифікують як прототипну, скриптову мову програмування з динамічною типізацією. Окрім цього, JavaScript також частково підтримує інші важливі складові програмування (імперативну та частково функціональну) і деякі відповідні архітектурні властивості, зокрема: динамічна та слабка типізація, автоматичне керування пам'яттю, прототипне наслідування, функції. 
-						">
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="process" id="process_section">
-		<div class="container">
-			<div class="title_b">
-				<h2>Етапи розробки</h2>
-				<p>Як і будь-яка робота, розробка сайту, потребує виконання певних кроків.</p>
-			</div>
-			<div class="row process_c">
-				<div class="process_b sq_on col-lg-4 col-md-4 col-12" id="id_square_one"><span class="square_one">1</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="0">
-						<h4>Аналіз</h4>
-						<p>Досліджуємо тематику вашого бізнесу, аналізуємо конкурентів.</p>
-					</div>
-				</div>
-				<div class="process_b sq_tw col-lg-4 col-md-4 col-12"><span class="square_two">2</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="1000">
-						<h4>Дизайн</h4>
-						<p>Розробляємо дизайн, який залишає яскраве враження про компанію.</p>
-					</div>
-				</div>
-				<div class="process_b pr_b sq_th col-lg-4 col-md-4 col-12" id="id_square_three"><span class="square_three">3</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
-						<h4>Розробка</h4>
-						<p>Робимо сайт з інтерактивним дизайном, динамічними елементами і адаптивною версткою.</p>
-					</div>
-				</div>
-				<div class="process_b sq_s col-lg-4 col-md-4 col-12" id="id_square_six"><span class="square_six">6</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
-						<h4>Відгук</h4>
-						<p>Гарний відгук клієнта про бездоганно виконану роботу)</p>
-					</div>
-				</div>
-				<div class="process_b sq_fv col-lg-4 col-md-4 col-12" id="id_square_five"><span class="square_five">5</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="1000">
-						<h4>Запуск</h4>
-						<p>Підтримуємо сайт, допомагаємо управляти контентом.</p>
-					</div>
-				</div>
-				<div class="process_b sq_fo col-lg-4 col-md-4 col-12" id="id_square_four"><span class="square_four">4</span>
-					<div class="b_brc" data-aos="fade-up" data-aos-duration="0">
-						<h4>Контент</h4>
-						<p>Наповнюємо сайт актуальною інформацією.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="price_calc" id="price_calc">
-		<div class="container">
-			<div class="title_b">
-				<h2>Калькулятор вартості</h2>
-				<p id="price_calc_text"></p>
-			</div>
-			<div id="price_calc_wrapper">
-			</div>
-			<div id="price_res_wrapper">
-			</div>
-		</div>
-	</section>
-	<section class="team" id="team_section">
-		<div class="container">
-			<div class="row">
-				<div class="team_t col-lg-3">
-					<h2>Наша команда</h2>
-				</div>
-				<div class="team_t col-lg-9">
-					<p>Наші розробники - це талановиті та досвідчені фахівці, які володіють різними мовами програмування та фреймворками, щоб створювати шедеври у веб-розробці. Наша команда дизайнерів вносить у кожен проект свою унікальну естетику та почуття стилю, щоб ваш сайт був не лише функціональним, але й красивим та запам'ятовуючимся.</p>
-				</div>
-			</div>
-			<div class="bg_team col-lg-12">
-				<div class="row justify-content-between">
-					<div class="face_team col-lg-3 col-md-3 p-0">
-						<div class="img_team"><img src="assets/img/team/oleksii.stulen.jpg" alt="">
-							<div class="social">
-								<span style="color: #fefefe; padding: 0;">
-									Супер Founder
-									<a target="_blank" href="https://t.me/stule_o" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-								</span>
-							</div>
-						</div>
-						<h4>Стулень Олексій</h4><span>Studio Founder, Менеджер</span>
-					</div>
-					<div class="face_team col-lg-3 col-md-3 p-0">
-						<div class="img_team"><img src="https://via.placeholder.com//275x275" alt="">
-							<div class="social">
-								<span style="color: #fefefe; padding: 0;">
-									Супер Розробник
-									<a target="_blank" href="https://t.me/jedilex" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-								</span>
-							</div>
-						</div>
-						<h4>Харитонов Олексій</h4><span>Розробник</span>
-					</div>
-					<div class="face_team col-lg-3 col-md-3 p-0">
-						<div class="img_team"><img src="https://via.placeholder.com//275x275" alt="">
-							<div class="social">
-								<span style="color: #fefefe; padding: 0;">
-									Теж Супер Розробник
-									<a target="_blank" href="https://t.me/daniilovvn" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-								</span>
-							</div>
-						</div>
-						<h4>Данілов Назар</h4><span>Розробник</span>
-					</div>
-					<div class="face_team col-lg-3 col-md-3 p-0">
-						<div class="img_team"><img src="https://via.placeholder.com//275x275" alt="">
-							<div class="social">
-								<span style="color: #fefefe; padding: 0;">
-									Супер Дизайнер
-									<a target="_blank" href="https://t.me/Y_a_r_0_s" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
-								</span>
-							</div>
-						</div>
-						<h4>Бондаренко Ярослав</h4><span>Дизайнер</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer id="footer">
-		<div class="container">
-			<div class="brend">
-				<div class="logo"><img src="assets/img/icons/logo_vio.svg">NordlysStudio</div>
-				<p>Адреса : Ukraine, Lviv</p>
-				<p>Телефон : +380669175615</p>
-				<p>Email : nordlys.web.studio@gmail.com</p>
-			</div>
-			<div class="nav_f col-lg-12 col-12"><span>Copyright © 2023 Nordlys.</span></div>
-		</div>
-	</footer>
+          <div class="img_tech" data-aos="fade-up" data-aos-duration="2100">
+            <img
+              class="tech_image"
+              src="./assets/img/techtologies/javascript.png"
+              alt="Javascript"
+              title="Javascript"
+              data-alert_title="Дивовижний Javascript"
+              data-alert_text="JavaScript (JS) — динамічна  мова програмування. Найчастіше використовується для створення веб сторінок, що надає можливість взаємодіяти з користувачем, керувати браузером, асинхронно обмінюватися даними з сервером, змінювати структуру та зовнішній вигляд вебсторінки. JavaScript класифікують як прототипну, скриптову мову програмування з динамічною типізацією. Окрім цього, JavaScript також частково підтримує інші важливі складові програмування (імперативну та частково функціональну) і деякі відповідні архітектурні властивості, зокрема: динамічна та слабка типізація, автоматичне керування пам'яттю, прототипне наслідування, функції. 
+						"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="process" id="process_section">
+      <div class="container">
+        <div class="title_b">
+          <h2>Етапи розробки</h2>
+          <p>
+            Як і будь-яка робота, розробка сайту, потребує виконання певних
+            кроків.
+          </p>
+        </div>
+        <div class="row process_c">
+          <div
+            class="process_b sq_on col-lg-4 col-md-4 col-12"
+            id="id_square_one"
+          >
+            <span class="square_one">1</span>
+            <div class="b_brc" data-aos="fade-up" data-aos-duration="0">
+              <h4>Аналіз</h4>
+              <p>
+                Досліджуємо тематику вашого бізнесу, аналізуємо конкурентів.
+              </p>
+            </div>
+          </div>
+          <div class="process_b sq_tw col-lg-4 col-md-4 col-12">
+            <span class="square_two">2</span>
+            <div class="b_brc" data-aos="fade-up" data-aos-duration="1000">
+              <h4>Дизайн</h4>
+              <p>
+                Розробляємо дизайн, який залишає яскраве враження про компанію.
+              </p>
+            </div>
+          </div>
+          <div
+            class="process_b pr_b sq_th col-lg-4 col-md-4 col-12"
+            id="id_square_three"
+          >
+            <span class="square_three">3</span>
+            <div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
+              <h4>Розробка</h4>
+              <p>
+                Робимо сайт з інтерактивним дизайном, динамічними елементами і
+                адаптивною версткою.
+              </p>
+            </div>
+          </div>
+          <div
+            class="process_b sq_s col-lg-4 col-md-4 col-12"
+            id="id_square_six"
+          >
+            <span class="square_six">6</span>
+            <div class="b_brc" data-aos="fade-up" data-aos-duration="2000">
+              <h4>Відгук</h4>
+              <p>Гарний відгук клієнта про бездоганно виконану роботу)</p>
+            </div>
+          </div>
+          <div
+            class="process_b sq_fv col-lg-4 col-md-4 col-12"
+            id="id_square_five"
+          >
+            <span class="square_five">5</span>
+            <div class="b_brc" data-aos="fade-up" data-aos-duration="1000">
+              <h4>Запуск</h4>
+              <p>Підтримуємо сайт, допомагаємо управляти контентом.</p>
+            </div>
+          </div>
+          <div
+            class="process_b sq_fo col-lg-4 col-md-4 col-12"
+            id="id_square_four"
+          >
+            <span class="square_four">4</span>
+            <div class="b_brc" data-aos="fade-up" data-aos-duration="0">
+              <h4>Контент</h4>
+              <p>Наповнюємо сайт актуальною інформацією.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price_calc" id="price_calc">
+      <div class="container">
+        <div class="title_b">
+          <h2>Калькулятор вартості</h2>
+          <p id="price_calc_text"></p>
+        </div>
+        <div id="price_calc_wrapper"></div>
+        <div id="price_res_wrapper"></div>
+      </div>
+    </section>
+    <section class="team" id="team_section">
+      <div class="container">
+        <div class="row">
+          <div class="team_t col-lg-3">
+            <h2>Наша команда</h2>
+          </div>
+          <div class="team_t col-lg-9">
+            <p>
+              Наші розробники - це талановиті та досвідчені фахівці, які
+              володіють різними мовами програмування та фреймворками, щоб
+              створювати шедеври у веб-розробці. Наша команда дизайнерів вносить
+              у кожен проект свою унікальну естетику та почуття стилю, щоб ваш
+              сайт був не лише функціональним, але й красивим та
+              запам'ятовуючимся.
+            </p>
+          </div>
+        </div>
+        <div class="bg_team col-lg-12">
+          <div class="row justify-content-between">
+            <div class="face_team col-lg-3 col-md-3 p-0">
+              <div class="img_team">
+                <img src="assets/img/team/oleksii.stulen.jpg" alt="" />
+                <div class="social">
+                  <span style="color: #fefefe; padding: 0">
+                    Супер Founder
+                    <a
+                      target="_blank"
+                      href="https://t.me/stule_o"
+                      title="Telegram"
+                      ><i class="fa-brands fa-telegram"></i
+                    ></a>
+                  </span>
+                </div>
+              </div>
+              <h4>Стулень Олексій</h4>
+              <span>Studio Founder, Менеджер</span>
+            </div>
+            <div class="face_team col-lg-3 col-md-3 p-0">
+              <div class="img_team">
+                <img src="https://via.placeholder.com//275x275" alt="" />
+                <div class="social">
+                  <span style="color: #fefefe; padding: 0">
+                    Супер Розробник
+                    <a
+                      target="_blank"
+                      href="https://t.me/jedilex"
+                      title="Telegram"
+                      ><i class="fa-brands fa-telegram"></i
+                    ></a>
+                  </span>
+                </div>
+              </div>
+              <h4>Харитонов Олексій</h4>
+              <span>Розробник</span>
+            </div>
+            <div class="face_team col-lg-3 col-md-3 p-0">
+              <div class="img_team">
+                <img src="https://via.placeholder.com//275x275" alt="" />
+                <div class="social">
+                  <span style="color: #fefefe; padding: 0">
+                    Теж Супер Розробник
+                    <a
+                      target="_blank"
+                      href="https://t.me/daniilovvn"
+                      title="Telegram"
+                      ><i class="fa-brands fa-telegram"></i
+                    ></a>
+                  </span>
+                </div>
+              </div>
+              <h4>Данілов Назар</h4>
+              <span>Розробник</span>
+            </div>
+            <div class="face_team col-lg-3 col-md-3 p-0">
+              <div class="img_team">
+                <img src="https://via.placeholder.com//275x275" alt="" />
+                <div class="social">
+                  <span style="color: #fefefe; padding: 0">
+                    Супер Дизайнер
+                    <a
+                      target="_blank"
+                      href="https://t.me/Y_a_r_0_s"
+                      title="Telegram"
+                      ><i class="fa-brands fa-telegram"></i
+                    ></a>
+                  </span>
+                </div>
+              </div>
+              <h4>Бондаренко Ярослав</h4>
+              <span>Дизайнер</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="brend">
+          <div class="logo">
+            <img src="assets/img/icons/logo_vio.svg" />NordlysStudio
+          </div>
+          <p>Адреса : Ukraine, Lviv</p>
+          <p>Телефон : +380669175615</p>
+          <p>Email : nordlys.web.studio@gmail.com</p>
+        </div>
+        <div class="nav_f col-lg-12 col-12">
+          <span>Copyright © 2023 Nordlys.</span>
+        </div>
+      </div>
+    </footer>
 
-	<div class="to_top" id="btn__up_to_top">
-		<div class="to_top_body">
-			<i class="fa-solid fa-chevron-up"></i>
-		</div>
-	</div>
+    <div class="to_top" id="btn__up_to_top">
+      <div class="to_top_body">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </div>
 
-	<div class="cookies-modal">
-		<div class="cookies-modal-body">
-			<div class="cookies-modal-close-area">
-			</div>
-			<div class="cookies-modal-content">
-				<i class="fa-solid fa-xmark cookies-modal-close"></i>
-				<div class="cookies-modal-title">Використання Cookie</div>
-				<div class="cookies-modal-text">Даний сайт використовує файли cookie та інші подібні технології. Ми
-					використовуємо файли cookie для аналізу трафіку та покращення функціональних можливостей нашого сайту.
-					Якщо ви не бажаєте щоб вказані дані опрацьовувались нами, ви завжди можете змінити налаштування cookie у
-					своєму браузері або перестати користуватись цим сайтом. Дізнатись більше можете з нашої Політики
-					Конфіденційності. Продовжуючи використовувати цей сайт ви надаєте згоду на обробку файлів cookie.</div>
-				<div class="cookies-modal-agree-button">
-					<div class="button"><a>Зрозумів(ла)</a></div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="cookies-modal">
+      <div class="cookies-modal-body">
+        <div class="cookies-modal-close-area"></div>
+        <div class="cookies-modal-content">
+          <i class="fa-solid fa-xmark cookies-modal-close"></i>
+          <div class="cookies-modal-title">Використання Cookie</div>
+          <div class="cookies-modal-text">
+            Даний сайт використовує файли cookie та інші подібні технології. Ми
+            використовуємо файли cookie для аналізу трафіку та покращення
+            функціональних можливостей нашого сайту. Якщо ви не бажаєте щоб
+            вказані дані опрацьовувались нами, ви завжди можете змінити
+            налаштування cookie у своєму браузері або перестати користуватись
+            цим сайтом. Дізнатись більше можете з нашої Політики
+            Конфіденційності. Продовжуючи використовувати цей сайт ви надаєте
+            згоду на обробку файлів cookie.
+          </div>
+          <div class="cookies-modal-agree-button">
+            <div class="button"><a>Зрозумів(ла)</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- Local scripts -->
-	<script src="assets/js/libs.min.js"></script>
+    <!-- Local scripts -->
+    <script src="assets/js/libs.min.js"></script>
 
-	<!-- CDN scripts -->
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://www.google.com/recaptcha/api.js?onload=callBlockOnloadCallback&render=explicit"async defer></script>
+    <!-- CDN scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+      integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=callBlockOnloadCallback&render=explicit"
+      async
+      defer
+    ></script>
 
-	<!-- Local Scripts-->
-	<script src="assets/js/index.js"></script>
-	<script src="assets/js/modals.js"></script>
-	<script src="assets/js/price_calc.js"></script>
-	<script src="assets/js/processUpToTopBtn.js"></script>
-	<script src="assets/js/navbar/changeActiveLink.js"></script>
-	<script src="assets/js/index/index.page.js"></script>
-	<script src="assets/js/callBlock.js"></script>
-	<script src="assets/js/setPhoneMask.js"></script>
-
-</body>
-
+    <!-- Local Scripts-->
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/modals.js"></script>
+    <script src="assets/js/price_calc.js"></script>
+    <script src="assets/js/processUpToTopBtn.js"></script>
+    <script src="assets/js/navbar/changeActiveLink.js"></script>
+    <script src="assets/js/index/index.page.js"></script>
+    <script src="assets/js/callBlock.js"></script>
+    <script src="assets/js/setPhoneMask.js"></script>
+  </body>
 </html>
