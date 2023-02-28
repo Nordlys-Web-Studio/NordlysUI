@@ -22,6 +22,7 @@
     <script src="https://kit.fontawesome.com/4885b8d773.js"></script>
     
     <!-- CDN links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -44,50 +45,84 @@
       </div>
     </div>
     <div class="container">
-      <div class="menu d-flex justify-content-between align-items-center"><a class="logo" href="index.html"><img
-            src="assets/img/icons/logo_vio.svg">Nordlys</a>
-        <div class="menu__icon"><span></span><span></span><span></span><span></span></div>
-        <div class="navbar-nav">
+      <div class="menu d-flex justify-content-between align-items-center">
+        <a class="logo" href="index.html"
+          ><img src="assets/img/icons/logo_vio.svg" />Nordlys</a
+        >
+        <div class="menu__icon">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="navbar-nav-wrapper">
           <ul>
             <li><a href="index.html">Головна</a></li>
-            <li><a href="portfolio.html">Портфоліо</a>
-            </li>
+            <li><a href="portfolio.html">Портфоліо</a></li>
             <li><a href="about.html">Про нас</a></li>
             <li><a href="contacts.html">Контакти</a></li>
-            <li class="down_nav"><a href="#">Більше</a>
+            <li class="down_nav">
+              <a href="#">Більше</a>
               <div class="dropdown-menu w_dropdown">
                 <div class="mega_m">
                   <h3></h3>
                   <ul>
+                    <li>
+                      <a href="index.html#id_products">Наші послуги</a>
+                    </li>
+                    <li>
+                      <a href="index.html#process_section">Етапи розробки</a>
+                    </li>
+                    <li>
+                      <a href="index.html#price_calc">Калькулятор вартості</a>
+                    </li>
                     <li><a href="index.html#team_section">Команда</a></li>
-									<li><a href="index.html#price_calc">Калькулятор вартості</a></li>
-									<li><a href="index.html#process_section">Етапи розробки</a></li>
                   </ul>
                 </div>
                 <div class="mega_m widget_mega">
                   <h3>Nordlys</h3>
-                  <div class="widget_m"><img src="./assets//img/header_widget.png"></div>
+                  <div class="widget_m">
+                    <img src="./assets//img/header_widget.png" />
+                  </div>
                 </div>
               </div>
             </li>
             <li><a href="faq.html" onclick="return false">FAQ</a></li>
             <div class="button small line"><a>Дзвінок</a></div>
-            <div class="call call-block">
-              <div class="call-block__body">
-                <form method="POST" class="call-block__content" onsubmit="return processCallModalRequest(this)">
-                  <input type="text" id="id_call_block_recaptcha_input" name="recaptcha" hidden>
-                  <i class="fa-solid fa-xmark call-block__close"></i>
-                  <h2>Напішіть свій номер і ми обов'язково перетелефонуємо вам!</h2>
-                  <input type="tel" required placeholder="+380(99) 99-99-999" id="phone">
-                  <div class="d-flex w-100 flex-column align-items-center">
-                    <div id="id_call_block_recaptcha_container" style="transform: scale(0.8);"></div>
-                    <p style="color: red;" class="mb-3" id="id_call_block_recaptch_error"></p>
-                  </div>
-                  <button type="submit">Відправити</button>
-                </form>
-              </div>
-            </div>
           </ul>
+        </div>
+      </div>
+      <div class="call call-block">
+        <div class="call-block__body">
+          <form
+            method="POST"
+            class="call-block__content"
+            onsubmit="return processCallModalRequest(this)"
+          >
+            <input
+              type="text"
+              id="id_call_block_recaptcha_input"
+              name="recaptcha"
+              hidden
+            />
+            <i class="fa-solid fa-xmark call-block__close"></i>
+            <h2>Напішіть свій номер і ми обов'язково перетелефонуємо вам!</h2>
+            <input
+              type="tel"
+              required
+              placeholder="+380(99) 99-99-999"
+              id="phone"
+            />
+            <div class="d-flex w-100 flex-column align-items-center">
+              <div
+                id="id_call_block_recaptcha_container"
+                style="transform: scale(0.8)"
+              ></div>
+              <p
+                style="color: red"
+                class="mb-3"
+                id="id_call_block_recaptch_error"
+              ></p>
+            </div>
+            <button type="submit">Відправити</button>
+          </form>
         </div>
       </div>
     </div>
@@ -183,6 +218,7 @@
     <script src="assets/js/libs.min.js"></script>
 
 	<!-- CDN scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
 	<script src="https://www.google.com/recaptcha/api.js?onload=callBlockOnloadCallback&render=explicit"async defer></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
