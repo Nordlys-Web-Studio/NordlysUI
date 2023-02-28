@@ -6,7 +6,7 @@ function changeNavbarActiveLink() {
   // navbar_links = navbar.getElementsByTagName('a')
   // 'li' = navbar_link.parentElement
 
-  const $navbar = document.querySelector(".navbar-nav");
+  const $navbar = document.querySelector(".navbar-nav-wrapper");
   const navbar_links = $navbar.getElementsByTagName("a");
 
   for (let i = 0; i < navbar_links.length; i++) {

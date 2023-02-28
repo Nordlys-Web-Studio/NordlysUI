@@ -15,3 +15,13 @@ const URLS = {
 
 const SITE_TYPE_DB_ID = 1
 
+
+function setPopovers() {
+    const popoverTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="popover"]'
+    );
+    return [...popoverTriggerList].map(
+      (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+    );
+  }
+  
