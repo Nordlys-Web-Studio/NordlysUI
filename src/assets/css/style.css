@@ -287,7 +287,7 @@ header .icon {
 }
 
 .nav_slider,
-.swiper-pagination {
+.swiper-pagination{
 	width: 100%;
 	position: absolute;
 	bottom: 100px;
@@ -298,8 +298,17 @@ header .icon {
 	justify-content: center;
 }
 
+.swiper-pagination2 {
+	color: #fff;
+}
+
+.swiper-pagination2 .swiper-slide {
+	width: 20px;
+}
+
 .nav_slider span.swiper-pagination-bullet,
-.swiper-pagination span.swiper-pagination-bullet {
+.swiper-pagination span.swiper-pagination-bullet,
+.swiper-pagination2 span.swiper-pagination-bullet {
 	opacity: 0.5;
 	display: -webkit-box;
 	display: flex;
@@ -316,7 +325,8 @@ header .icon {
 }
 
 .nav_slider span.swiper-pagination-bullet-active,
-.swiper-pagination span.swiper-pagination-bullet-active {
+.swiper-pagination span.swiper-pagination-bullet-active,
+.swiper-pagination2 span.swiper-pagination-bullet-active {
 	opacity: 1;
 	border: 2px solid #ee3fce;
 }
@@ -1484,7 +1494,8 @@ li:last-child .dropdown-menu  {
 }
 
 .product_bl .button a {
-	width: 100%;
+	width: auto;
+	padding: 10px 75px;
 }
 
 .product_bl:hover h3 {
