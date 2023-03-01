@@ -302,7 +302,6 @@ header .icon {
 	color: #fff;
 	user-select: none;
 	margin-top: 30px;
-
 }
 
 .swiper-pagination2 .swiper-slide {
@@ -4395,7 +4394,7 @@ h2 {
 }
 
 .check-item {
-	height: 100px;
+	height: 120px;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -4409,9 +4408,11 @@ h2 {
 	border-bottom: 1px solid #dfdfdf;
 	border-radius: 20px;
 	cursor: pointer;
+	text-align: center;
 }
 .check-item .stick-price {
 	position: relative;
+	right: 0%;
 	min-width: 2px;
 	height: 60%;
 	background: #ee3fce;
@@ -4419,15 +4420,17 @@ h2 {
 }
 .check-item span {
 	font-size: 1.7rem;
-	padding-right: 2%;
+	padding-right: 1%;
 	color: #000;
-	min-width: max-content;
+	min-width: 150px;
+	max-width: 150px;
 }
 .check-item img {
 	width: auto;
 	min-width: 180px;
 	max-width: 180px;
-	max-height: 100px;
+	min-height: 100px;
+	overflow: hidden;
 	transition: all 0.3s ease 0s;
 }
 @media (max-width: 768px) {
@@ -4514,8 +4517,21 @@ h2 {
 	margin-top: 0px;
 	color: #333;
 	padding: 0px 10px;
-	min-width: 350px;
+	min-width: 560px;
+	max-width: 560px;
 	/* max-width: -content; */
+}
+@media (max-width: 1198px) {
+	.check-item .product_cont p {
+		max-width: 450px;
+		min-width: 450px;
+		/* max-height: 50px; */
+		/* overflow: scroll; */
+	}
+	.check-item span {
+		max-width: 100px;
+		min-width: 100px;
+	}
 }
 
 .button-form {
@@ -4713,7 +4729,7 @@ h2 {
 	}
 }
 @media (max-width: 1023px) {
-	.swiper__button{
+	.swiper__button {
 		display: none;
 	}
 }
