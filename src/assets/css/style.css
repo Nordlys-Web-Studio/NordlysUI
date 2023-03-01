@@ -287,7 +287,7 @@ header .icon {
 }
 
 .nav_slider,
-.swiper-pagination{
+.swiper-pagination {
 	width: 100%;
 	position: absolute;
 	bottom: 100px;
@@ -3881,8 +3881,19 @@ h2 {
 		font-size: 30px;
 	}
 }
-
+@media screen and (max-width: 768px) {
+	.top_nav .left_nav {
+		display: none;
+	}
+	.top_nav .container{
+		align-items: center;
+		justify-content: center;
+	}
+}
 @media screen and (max-width: 420px) {
+	.top_nav {
+		display: none;
+	}
 	.top_nav .container {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
