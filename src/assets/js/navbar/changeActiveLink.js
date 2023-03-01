@@ -36,3 +36,17 @@ document.addEventListener("DOMContentLoaded", (_) => {
     console.log(`Failed to change active link in navbar. Error: ${error}`);
   }
 });
+
+//* overflow = hidden, when menu open on phone
+const headerMenuIcon = document.querySelectorAll('.menu__icon')
+const headerMenu = document.querySelector('.menu')
+headerMenuIcon.forEach(el => {
+	el.addEventListener('click', (e) => {
+		if (!headerMenu.classList.contains('menu_state_open')) {
+			document.body.style.overflow = 'hidden'
+		} else {
+			document.body.style.overflow = 'auto'
+		}
+	})
+	
+});
