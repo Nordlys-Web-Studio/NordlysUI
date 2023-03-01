@@ -1,9 +1,9 @@
-function reCaptchResponse(response){
+function callBlockReCaptchResponse(response){
 	const $recaptchaInput = document.querySelector('#id_call_block_recaptcha_input')
 	$recaptchaInput.value = response
 }
 
-function reCaptchErrorResponse(response){
+function callBlockReCaptchErrorResponse(response){
 	const $recaptchaInput = document.querySelector('#id_call_block_recaptcha_input')
 	$recaptchaInput.value = ''
 }
@@ -11,8 +11,8 @@ function reCaptchErrorResponse(response){
 var callBlockOnloadCallback = function() {
     grecaptcha.render('id_call_block_recaptcha_container', {
       'sitekey' : '6LdAMZIkAAAAAIU0ohinOyUuoOe_Y9y43jvl346B',
-      'callback': reCaptchResponse,
-      'error-callback': reCaptchErrorResponse,
+      'callback': callBlockReCaptchResponse,
+      'error-callback': callBlockReCaptchErrorResponse,
       'hl': 'uk'
     });
   };
