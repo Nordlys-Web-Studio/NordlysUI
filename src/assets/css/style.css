@@ -339,7 +339,7 @@ header .icon {
 }
 
 .title p {
-	max-width: 500px;
+	max-width: 400px;
 	padding-top: 20px;
 	padding-bottom: 50px;
 	margin: 0;
@@ -804,11 +804,18 @@ header .icon {
 	-webkit-box-align: center;
 	align-items: center;
 	flex-wrap: wrap;
+	width: 100%;
+	overflow: hidden;
 }
 
 .navbar-nav-wrapper > ul > li {
 	list-style: none;
 	padding: 0px 15px;
+}
+@media (max-width:1200px) {
+	.navbar-nav-wrapper > ul > li {
+		padding: 0px 10px;
+	}
 }
 
 .navbar-nav-wrapper > ul > li > a {
@@ -1743,7 +1750,16 @@ li:last-child .dropdown-menu  {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-
+.links {
+	margin-left: 100px;
+	margin-right: -50px;
+}
+@media (max-width: 1400px) {
+	.links {
+		margin-left: 100px;
+		margin-right: -100px;
+	}
+}
 .img_tech > img {
 	max-width: 94px;
 	transition: 0.2s;
@@ -3430,6 +3446,7 @@ h2 {
 		flex-direction: row;
 		padding: 0px;
 		margin: 0px;
+		width: 100%;
 	}
 	.navbar-nav-wrapper ul li {
 		width: 100%;
@@ -4270,7 +4287,7 @@ h2 {
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .fa-telegram {
-	font-size: 20px;
+	font-size: 30px;
 }
 .telegram-img {
 	width: 60px;
