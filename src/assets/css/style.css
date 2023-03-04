@@ -4394,7 +4394,7 @@ h2 {
 }
 
 .check-item {
-	height: 120px;
+	height: 130px;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -4525,6 +4525,7 @@ h2 {
 	.check-item .product_cont p {
 		max-width: 450px;
 		min-width: 450px;
+		font-size: 14px;
 		/* max-height: 50px; */
 		/* overflow: scroll; */
 	}
@@ -4673,6 +4674,7 @@ h2 {
 }
 .call-block__content input {
 	height: 30px;
+	width: 70%;
 }
 .call-block__content button {
 	background: linear-gradient(to right, #7231cf 0%, #c33ca6 68%, #ee3fce 100%);
@@ -4735,4 +4737,7 @@ h2 {
 }
 .swiper-button-prev2 {
 	left: 0;
+}
+.product_bl {
+	height: 700px;
 }

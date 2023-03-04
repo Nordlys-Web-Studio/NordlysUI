@@ -9,7 +9,7 @@ function createSiteElement(siteObj) {
 	return `
 	<div class="swiper-slide">
 	<div class="row d-flex justify-content-center w-auto">
-		<div class="pr col-lg-5 col-md-8 col-12" data-aos="fade-up" data-aos-duration="0">
+		<div class="pr col-lg-5 col-md-8 col-12">
 			<div class="product_bl">
 				${imageElement}
 				<div class="product_cont">
@@ -52,37 +52,38 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 		const siteTypeHtmlListElemnts = await createSiteTypes()
 
 		const swiper = new Swiper(".swiper2", {
-		// Optional parameters
-		effect: "cards",
-		cardsEffect: {
-			slideShadows: false,
-		},
-		loop: true,
-		observer: true,
-		slidesPerView: 'auto',
-		// If we need pagination
-		pagination: {
-			el: ".swiper-pagination2",
-			clickable: true,
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (index + 1) + "</span>";
+			// Optional parameters
+			effect: "cards",
+			cardsEffect: {
+				slideShadows: false,
 			},
-		},
+			loop: false,
+			loopedSlides: 2,
+			observer: true,
+			slidesPerView: 'auto',
+			// If we need pagination
+			pagination: {
+				el: ".swiper-pagination2",
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + (index + 1) + "</span>";
+				},
+			},
 
-		// Navigation arrows
-		navigation: {
-			nextEl: ".swiper-button-next2",
-			prevEl: ".swiper-button-prev2",
-		},
+			// Navigation arrows
+			navigation: {
+				nextEl: ".swiper-button-next2",
+				prevEl: ".swiper-button-prev2",
+			},
 
-		// And if we need scrollbar
-		scrollbar: {
-			el: ".swiper-scrollbar2",
-		},
-	});
+			// And if we need scrollbar
+			scrollbar: {
+				el: ".swiper-scrollbar2",
+			},
+		});
 		swiper.appendSlide(siteTypeHtmlListElemnts)
-		// swiper.update(true)
-		// swiper.autoplay.start();
+		swiper.update(true)
+		swiper.autoplay.start();
 		console.log(swiper)
 	} catch (error) {
 		console.log(error)
