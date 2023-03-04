@@ -20,11 +20,6 @@ function AddOrRemoveError(obj) {
   obj.classList.remove("_error");
 }
 
-async function getSiteTypes() {
-  const url = `${API_URI}/price-calculation/rows/${SITE_TYPE_DB_ID}/`;
-  return await fetch(url);
-}
-
 function renderSiteTypeElement(siteTypeObj) {
   let imageString = "";
   if (siteTypeObj.image) {
