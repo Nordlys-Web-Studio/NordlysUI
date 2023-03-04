@@ -227,7 +227,7 @@ async function renderPriceCalculation(){
                                  <h3>${price.column}</h3>
                                  <div class="d-flex justify-content-between" style="width: 100%">
                                    <div style="border-left: 3px solid #272733; padding-left: 5px;"><h4>Ціна:</h4></div>
-                                   <div><h4>~$${price.price}</h4></div>
+                                   <div><h4>від $${price.price}</h4></div>
                                  </div>
                                  <div class="d-flex justify-content-between" style="width: 100%">
                                    <div style="border-left: 3px solid #272733; padding-left: 5px;"><h4>Термін:</h4></div>
@@ -236,7 +236,7 @@ async function renderPriceCalculation(){
                                </div>`
         })
 
-        price_res_html += `</div> <h3 class="mt-4" style="text-align: end;">Всього: ~${calculation_json.price.total_price}</h3>`
+        price_res_html += `</div> <h3 class="mt-4" style="text-align: end;">Всього: від ${calculation_json.price.total_price}</h3>`
         price_res_wrapper.innerHTML = price_res_html
     }    
 }
