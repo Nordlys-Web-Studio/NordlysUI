@@ -812,7 +812,7 @@ header .icon {
 	list-style: none;
 	padding: 0px 15px;
 }
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
 	.navbar-nav-wrapper > ul > li {
 		padding: 0px 10px;
 	}
@@ -1448,6 +1448,13 @@ li:last-child .dropdown-menu  {
 	text-align: center;
 	background: #272733;
 	box-shadow: 0px 0px 15px #1f1f29;
+}
+@media (max-width: 768px) {
+	.product_bl img {
+		height: 100%;
+		width: 100%;
+		max-height: 280px;
+	}
 }
 
 .product_bl .product_cont {
