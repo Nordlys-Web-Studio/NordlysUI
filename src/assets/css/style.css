@@ -1451,8 +1451,8 @@ li:last-child .dropdown-menu  {
 }
 @media (max-width: 768px) {
 	.product_bl img {
-		height: 100%;
-		width: 100%;
+		/* height: 100%; */
+		/* width: 100%; */
 		max-height: 280px;
 	}
 }
