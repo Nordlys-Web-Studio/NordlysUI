@@ -236,7 +236,7 @@ async function renderPriceCalculation(){
                                </div>`
         })
 
-        price_res_html += `</div> <h3 class="mt-4" style="text-align: end;">Всього: від ${calculation_json.price.total_price}</h3>`
+        price_res_html += `</div> <h3 class="mt-4" style="text-align: end;">Всього: від $${calculation_json.price.total_price}</h3>`
         price_res_wrapper.innerHTML = price_res_html
     }    
 }
