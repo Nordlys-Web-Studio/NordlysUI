@@ -4293,7 +4293,7 @@ h2 {
 	border-radius: 10px;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.fa-telegram {
+.fa-telegram, .fa-instagram {
 	font-size: 30px;
 }
 .telegram-img {
@@ -4698,7 +4698,7 @@ h2 {
 }
 .call-block__content input {
 	height: 30px;
-	width: 70%;
+	width: 270px;
 }
 .call-block__content button {
 	background: linear-gradient(to right, #7231cf 0%, #c33ca6 68%, #ee3fce 100%);
