@@ -1,6 +1,20 @@
 const price_calc_wrapper = document.querySelector('#price_calc_wrapper')
 const price_res_wrapper = document.querySelector('#price_res_wrapper')
 
+
+
+//скидувати калькулятор якшо треба при нажаті на кнопку вверх
+
+// const toTopBtn = document.querySelector("#btn__up_to_top");
+// toTopBtn.addEventListener('click',(e)=>{
+// 	all_columns.forEach(column => {
+// 		getColumnBtnList(column).forEach(btn => {
+// 			unSelectBtn(btn)
+// 			price_res_wrapper.innerHTML = ""
+// 		})
+//   })
+// })
+
 let all_columns = []
 
 let calc_buttons = []
