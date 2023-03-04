@@ -1,0 +1,24 @@
+User-agent: *
+Disallow: /assets
+Disallow: /not_used_html
+Disallow: /faq.html
+Allow: /
+Allow: /index.html
+Allow: /contacts.html
+Allow: /about.html
+Allow: /portfolio.html
+
+User-agent: Googlebot
+Disallow: /assets
+Disallow: /not_used_html
+Disallow: /faq.html
+Allow: /
+Allow: /index.html
+Allow: /contacts.html
+Allow: /about.html
+Allow: /portfolio.html
+
+User-Agent: YandexBot
+Disallow: /
+
+Host: https://nordlys.com.ua/
