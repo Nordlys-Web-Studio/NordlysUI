@@ -4293,7 +4293,8 @@ h2 {
 	border-radius: 10px;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.fa-telegram, .fa-instagram {
+.fa-telegram,
+.fa-instagram {
 	font-size: 30px;
 }
 .telegram-img {
@@ -4623,6 +4624,18 @@ h2 {
 	.require:nth-child(3) {
 		right: 7%;
 	}
+}
+#id_recaptcha_container {
+	position: relative;
+}
+#id_recaptcha_container::after {
+	content: "*";
+	color: red;
+	display: block;
+	position: absolute;
+	top: 1%;
+	right: 3%;
+	z-index: 10;
 }
 
 /*/////////////////////////// Call-block//////////////////*/
