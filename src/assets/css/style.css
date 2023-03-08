@@ -4778,3 +4778,7 @@ h2 {
 .product_bl {
 	height: 700px;
 }
+
+.strong-text{
+	font-weight: 600;
+}
