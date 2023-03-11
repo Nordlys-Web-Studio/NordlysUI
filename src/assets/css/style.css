@@ -168,7 +168,7 @@ a {
 }
 
 .logo img {
-	width: 55px;
+	width: 114px;
 	margin-right: 10px;
 }
 
@@ -4294,7 +4294,8 @@ h2 {
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .fa-telegram,
-.fa-instagram {
+.fa-instagram,
+.fa-viber {
 	font-size: 30px;
 }
 .telegram-img {

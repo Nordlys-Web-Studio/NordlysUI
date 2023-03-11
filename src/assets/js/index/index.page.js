@@ -69,3 +69,11 @@ document.addEventListener("DOMContentLoaded", (ev) => {
 	loadTecmImagesPopUp();
 	setPopovers();
 });
+
+
+function showViberQR(){
+	Swal.fire({
+		imageUrl: 'assets/img/qr/viber_qr.png',
+		title: 'Відскануй QR код'
+	})
+}
