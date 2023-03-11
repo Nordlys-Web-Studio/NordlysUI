@@ -1,6 +1,20 @@
 const price_calc_wrapper = document.querySelector('#price_calc_wrapper')
 const price_res_wrapper = document.querySelector('#price_res_wrapper')
 
+
+
+//скидувати калькулятор якшо треба при нажаті на кнопку вверх
+
+// const toTopBtn = document.querySelector("#btn__up_to_top");
+// toTopBtn.addEventListener('click',(e)=>{
+// 	all_columns.forEach(column => {
+// 		getColumnBtnList(column).forEach(btn => {
+// 			unSelectBtn(btn)
+// 			price_res_wrapper.innerHTML = ""
+// 		})
+//   })
+// })
+
 let all_columns = []
 
 let calc_buttons = []
@@ -144,7 +158,7 @@ function buildCalcPriceQuery(){
 
 
 async function getColumns(){
-    return await fetch('http://127.0.0.1:8000/api/v1/price-calculation/columns/', {
+    return await fetch(`${API_URI}/price-calculation/columns/`, {
         method: 'GET'
     })
 }
@@ -159,6 +173,12 @@ async function renderPriceCalculator(){
     else{
         const colums_json = await columns_response.json()
         const columns = colums_json.columns
+        console.log(columns)
+        if(columns.length < 1){
+            price_calc_wrapper.innerHTML = '<h3 style="text-align: center;">Не вдалося завантажити калькулятор</h3>'
+            return false
+        }
+
         let columns_btns_str = ''
         columns.forEach(column => {
             all_columns.push(column.id)
@@ -166,9 +186,9 @@ async function renderPriceCalculator(){
                                         <h3>${column.name}</h3>`
 
             column.rows.forEach(row => {
-                columns_btns_str += `<div class="calc_button" data-column="${column.id}" data-row="${row.id}" title="${row.description}">
+                columns_btns_str += `<div class="calc_button" data-column="${column.id}" data-row="${row.id}">
                                         <div class="calc_button_text">${row.name}</div> 
-                                        <i class="fa-solid fa-info calc_button_desc"></i>
+                                        <i style="padding: 0px 10px" class="fa-solid fa-info calc_button_desc" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover focus" data-bs-content="${row.description}"></i>
                                     </div>`
             })
 
@@ -177,13 +197,14 @@ async function renderPriceCalculator(){
 
         let calculator_html = `<div class="row">${columns_btns_str}</div>`
         price_calc_wrapper.innerHTML = calculator_html
+        setPopovers()
         return true
     }
 
 }
 
 async function getPriceCalculation(query){
-    return await fetch(`http://127.0.0.1:8000/api/v1/price-calculation/calculate/${query}`, {
+    return await fetch(`${API_URI}/price-calculation/calculate/${query}`, {
         method: 'GET',
     })
 }
@@ -206,7 +227,7 @@ async function renderPriceCalculation(){
                                  <h3>${price.column}</h3>
                                  <div class="d-flex justify-content-between" style="width: 100%">
                                    <div style="border-left: 3px solid #272733; padding-left: 5px;"><h4>Ціна:</h4></div>
-                                   <div><h4>~$${price.price}</h4></div>
+                                   <div><h4>від $${price.price}</h4></div>
                                  </div>
                                  <div class="d-flex justify-content-between" style="width: 100%">
                                    <div style="border-left: 3px solid #272733; padding-left: 5px;"><h4>Термін:</h4></div>
@@ -215,15 +236,22 @@ async function renderPriceCalculation(){
                                </div>`
         })
 
-        price_res_html += `</div> <h3 class="mt-4" style="text-align: end;">Всього: ~${calculation_json.price.total_price}</h3>`
+        price_res_html += `</div> <h3 class="mt-4" style="text-align: end;">Всього: від $${calculation_json.price.total_price}</h3>`
         price_res_wrapper.innerHTML = price_res_html
     }    
 }
 
 document.addEventListener('DOMContentLoaded', async (ev) => {
-    const is_rendered_calculator = await renderPriceCalculator()
-    if(is_rendered_calculator){
-        setCalcButtons()
-        updatedBtns(calc_buttons)
+    const $price_calc_text = document.querySelector('#price_calc_text')
+    try{
+        const is_rendered_calculator = await renderPriceCalculator()
+        if(is_rendered_calculator){
+            setCalcButtons()
+            updatedBtns(calc_buttons)
+        }
+    }
+    catch(error){
+        $price_calc_text.innerHTML = '<h4>Щось пішло не так... :( <br /> Не вдалося завантажити калькулятор. Будь ласка, спробуйте пізніше або <a href="contacts.html">зв`яжіться з нами</a></h4>'
+        console.log(`Failed render price calculation section. Error: ${error}`)
     }
 })

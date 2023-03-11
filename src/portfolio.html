@@ -1,137 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
+    <title>Портфоліо</title>
+
+    <!-- Google Analytics-->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKH71DY3JC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XKH71DY3JC');
+    </script>
+    
+    <!-- Local scripts -->
+    <script src="assets/js/config.js"></script>
+    
+    <!-- CDN scripts -->
     <script src="https://kit.fontawesome.com/4885b8d773.js"></script>
+    
+    <!-- CDN links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Local links-->
+	  <link rel="canonical" href="https://nordlys.com.ua/portfolio.html" />
     <link rel="stylesheet" href="assets/css/libs.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/colors.css">
+	  <link rel="stylesheet" href="assets/css/colors.css">
+	  <link rel="stylesheet" href="assets/css/utils.css">
+	  <link rel="shortcut icon" href="assets/img/icons/nordlys_logo.png" type="image/x-icon">
+
+    <!-- Meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Веб-студія Nordlys ➔ Портфоліо. Передивись наші роботи ☎ (096) 740-59-18." />
+    <meta name="keywords" content="nordlys портфоліо, нордліс студія портфоліо, веб студія нордліс портфоліо, студія нордліс роботи, нордліс приклади робіт, нордліс україна портфоліо">
+    
+    <meta property="og:url" content="https://nordlys.com.ua/portfolio.html" />
+    <meta property="og:title" content="Веб-студія Nordlys - Портфоліо" />
+    <meta property="og:description" content="Веб-студія Nordlys ➔ Портфоліо. Передивись наші роботи ☎ (096) 740-59-18." />
+    <meta property="og:locale" content="uk_UA" />
   </head>
-  <body id="portfolio">
+  <body>
     <div class="top_nav">
       <div class="container">
-        <div class="left_nav"><span><i class="far fa-question-circle"></i>FAG</span><span><i class="fas fa-map-marker-alt"></i>184 Main Collins Street</span></div>
-        <div class="right_nav"><span><i class="fas fa-paper-plane"></i>brunn@select-themes.com</span><span><i class="fas fa-mobile-alt"></i>444 77 0000</span></div>
+        <div class="left_nav"><span><i class="far fa-question-circle"></i>FAG</span><span><i class="fas fa-map-marker-alt"></i>Ukraine, Lviv</span></div>
+        <div class="right_nav"><span><i class="fa-solid fa-envelope"></i><a href="mailto:nordlys.web.studio@gmail.com" class="color_white">nordlys.web.studio@gmail.com</a></span><span><i class="fas fa-mobile-alt"></i><a href="tel:+380967405918" class="color_white">+380967405918</a></span></div>
       </div>
     </div>
     <div class="container">
-      <div class="menu d-flex justify-content-between align-items-center"><a class="logo" href="index.html"><img src="assets/img/icons/logo_vio.svg">Violy</a>
-        <div class="menu__icon"><span></span><span></span><span></span><span></span></div>
-        <div class="navbar-nav">
+      <div class="menu d-flex justify-content-between align-items-center">
+        <a class="logo" href="index.html"
+          ><img src="assets/img/icons/nordlys_logo.png" /></a
+        >
+        <div class="menu__icon">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="navbar-nav-wrapper">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li class="down_nav"><a href="portfolio.html">Portfolio</a>
-              <div class="dropdown-menu small_menu">
-                <ul>
-                  <li><a href="posts.html">One Column</a></li>
-                  <li><a href="two_cols.html">Two Column</a></li>
-                  <li><a href="three_cols.html">Three Column</a></li>
-                  <li><a href="posts.html">Posts</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="down_nav"><a href="#">Blog</a>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="portfolio.html">Портфоліо</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+            <li class="down_nav">
+              <a href="#">Більше</a>
               <div class="dropdown-menu w_dropdown">
                 <div class="mega_m">
-                  <h3>Blog</h3>
+                  <h3></h3>
                   <ul>
-                    <li><a href="posts.html">One Column</a></li>
-                    <li><a href="two_cols.html">Two Column</a></li>
-                    <li><a href="three_cols.html">Three Colum</a></li>
-                    <li><a href="three_cols.html">Four Colum</a></li>
-                  </ul>
-                </div>
-                <div class="mega_m">
-                  <h3>Standart</h3>
-                  <ul>
-                    <li><a href="posts.html">Posts</a></li>
-                    <li><a href="right_sidebar_blog.html">Right Sidebar Post</a></li>
-                    <li><a href="left_sidebar_blog.html">Left Sidebar Post</a></li>
-                    <li><a href="three_cols.html">Three Colum</a></li>
-                  </ul>
-                </div>
-                <div class="mega_m">
-                  <h3>Post Types</h3>
-                  <ul>
-                    <li><a href="single_post_image.html">Single Post Image</a></li>
-                    <li><a href="single_post_video.html">Single Post Video</a></li>
-                    <li><a href="single_post_quote.html">Single Post Quote</a></li>
+                    <li>
+                      <a href="index.html#id_products">Наші послуги</a>
+                    </li>
+                    <li>
+                      <a href="index.html#process_section">Етапи розробки</a>
+                    </li>
+                    <li>
+                      <a href="index.html#price_calc">Калькулятор вартості</a>
+                    </li>
+                    <li><a href="index.html#team_section">Команда</a></li>
                   </ul>
                 </div>
                 <div class="mega_m widget_mega">
-                  <h3>Widget</h3>
-                  <div class="widget_m"><img src="https://via.placeholder.com/500x500"></div>
+                  <h3>Nordlys</h3>
+                  <div class="widget_m">
+                    <img src="./assets//img/header_widget.png" />
+                  </div>
                 </div>
               </div>
             </li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <div class="button small line"><a href="#">Call Us</a></div>
+            <li><a href="faq.html" onclick="return false">FAQ</a></li>
+            <div class="button small line"><a>Дзвінок</a></div>
           </ul>
+        </div>
+      </div>
+      <div class="call call-block">
+        <div class="call-block__body">
+          <form
+            method="POST"
+            class="call-block__content"
+            onsubmit="return processCallModalRequest(this)"
+          >
+            <input
+              type="text"
+              id="id_call_block_recaptcha_input"
+              name="recaptcha"
+              hidden
+            />
+            <i class="fa-solid fa-xmark call-block__close"></i>
+            <h2>Напішіть свій номер і ми обов'язково перетелефонуємо вам!</h2>
+            <input
+              type="tel"
+              required
+              placeholder="+380(99) 99-99-999"
+              id="phone"
+            />
+            <div class="d-flex w-100 flex-column align-items-center">
+              <div
+                id="id_call_block_recaptcha_container"
+                style="transform: scale(0.9)"
+              ></div>
+              <p
+                style="color: red"
+                class="mb-3"
+                id="id_call_block_recaptch_error"
+              ></p>
+            </div>
+            <button type="submit">Відправити</button>
+          </form>
         </div>
       </div>
     </div>
     <header class="head_page"><span class="element_two"><img src="assets/img/cub_two.png" alt=""></span><span class="element_three"><img src="assets/img/cub_three.png" alt=""></span><span class="element_thirteen"><img src="assets/img/icons/cub_thirteen.svg" alt=""></span>
       <div class="container title_h">
         <div class="block_title">
-          <h1>Portfolio</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam ipsam <br> repudiandae nobis. Reprehenderit, inventore rem.</p>
+          <h1>Портфоліо</h1>
+          <p>
+            Наше портфоліо - це наша гордість та візитна картка.
         </div>
       </div>
     </header>
-    <section class="work">
-      <div class="container">
-        <div class="wrk">
-          <div class="img_wr"><img src="https://via.placeholder.com/500x500"></div>
-          <div class="name_wr">
-            <h3>Best Project</h3><span>Completed In 3D Max</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Iaculis at erat pellentesque adipiscing. Iaculis at erat pellentesque adipiscing commodo elit at. Et</p>
-            <div class="icon i_two col-lg-4 col-md-12">
-              <div class="row align-items-center"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="class fab fa-behance"></i></a></div>
-            </div>
-          </div>
-        </div>
-        <div class="img_w">
-          <div class="row">
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com/260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com/260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-                        <div class="img_portf"><a data-fancybox="gallery" href="https://via.placeholder.com/1920x1080">
-                            <div class="hover_info"><i class="fas fa-search"></i></div><img src="https://via.placeholder.com//260x260"></a></div>
-          </div>
+    <div class="post_content container">
+      <div class="posts_s two_cols col-lg-12">
+        <div class="row">
+                    <div class="posts_standart">
+                        <div class="post_img"><img src="assets/img/projects/ev1.png"></div>
+                      <div class="wrp_post">
+                        <div class="category"><span>Портфоліо</span></div>
+                          <h2>Сайт апартаментів</h2>
+                        <p>Було розроблено сайт апартаментів. Також зроблено унікальний дизайн.</p>
+                        <div class="bottom_inf">
+                          <div class="left_inf"><span></span></div>
+                          <div class="right_inf"><span>Липень 2022р.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="posts_standart">
+                        <div class="post_img"><img src="assets/img/projects/rentcity.png"></div>
+                      <div class="wrp_post">
+                        <div class="category"><span>Портфоліо</span></div>
+                          <h2>Оренда меблів та виробництво декорацій</h2>
+                        <p>Унікальний досвід роботи з механізованими і інтерактивними інсталяціями у сфері меблів та декорацій.</p>
+                        <div class="bottom_inf">
+                          <div class="left_inf"><span></span></div>
+                          <div class="right_inf"><span>Листопад 2022р.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="posts_standart">
+                      <div class="post_img"><img src="assets/img/projects/lazystar.png"></div>
+                      <div class="wrp_post">
+                        <div class="category"><span>Портфоліо</span></div>
+                          <h2>Сервіс роботи з соц. мережами</h2>
+                        <p>A large selection of houses in the south of Ukraine, call, always happy to help with the choice of your dreams. A large selection of houses in the south of Ukraine, call, always happy to help with the choice of your dreams</p>
+                        <div class="bottom_inf">
+                          <div class="left_inf"><span></span></div>
+                          <div class="right_inf"><span>Травень 2022р.</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="posts_standart">
+                        <div class="post_img"><img src="assets/img/projects/rivne.png"></div>
+                      <div class="wrp_post">
+                        <div class="category"><span>Портфоліо</span></div>
+                          <h2>Туристичний сайт Рівненщини</h2>
+                        <p>"Ми зібрали цікаві фото, фотосфери та віртуальні тури визначними місцями. Пропонуємо провести незабутні вихідні, подорожуючи Рівненщиною! "</p>
+                        <div class="bottom_inf">
+                          <div class="left_inf"><span></span></div>
+                          <div class="right_inf"><span>Жовтень 2022р.</span></div>
+                        </div>
+                      </div>
+                    </div>
+          <div class="nav_pages"><span class="active">1</span></div>
         </div>
       </div>
-    </section>
+    </div>
     <footer id="footer">
       <div class="container">
         <div class="brend">
-          <div class="logo"><img src="assets/img/icons/logo_vio.svg">VioStudio</div>
-          <p>Address : 999 White St</p>
-          <p>Phone Number : + (888) 123-4567</p>
-          <p>Email : admin@mail.com</p>
+          <div class="logo"><img src="assets/img/icons/nordlys_logo.png"></div>
+          <p>Адреса : Ukraine, Lviv</p>
+      	 <p>Телефон : +380967405918</p>
+      	 <p>Email : nordlys.web.studio@gmail.com</p>
         </div>
-        <div class="nav_f col-lg-12 col-12"><span>Copyright © 2019 Astroon.</span></div>
+        <div class="nav_f col-lg-12 col-12"><span>All rights reserved ® <script>document.write(new Date().getFullYear())</script> Nordlys Web Studio</span></div>
       </div>
     </footer>
+
+	 <div class="to_top" id="btn__up_to_top">
+		<div class="to_top_body">
+			<i class="fa-solid fa-chevron-up"></i>
+		</div>
+	</div>
+
+    <!-- Local scripts -->
     <script src="assets/js/libs.min.js"></script>
+
+	<!-- CDN scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.0/dist/sweetalert2.all.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=callBlockOnloadCallback&render=explicit"async defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Local scripts -->
     <script src="assets/js/index.js"></script>
-  </body>
+    <script src="assets/js/navbar/changeActiveLink.js"></script>
+	<script src="assets/js/processUpToTopBtn.js"></script>
+	<script src="assets/js/callBlock.js"></script>
+	<script src="assets/js/setPhoneMask.js"></script>
+</body>
 </html>
