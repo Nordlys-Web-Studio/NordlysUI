@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 		});
 		swiper.appendSlide(siteTypeHtmlListElemnts)
 		swiper.update(true)
-		console.log(swiper)
 	} catch (error) {
 		console.log(error)
 		return;
