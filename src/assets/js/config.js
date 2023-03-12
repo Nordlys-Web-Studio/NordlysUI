@@ -1,11 +1,12 @@
-const DEV_HOSTNAME = 'server.dev.nordlys.space'
-const PRODUCTION_HOSTNAME = 'server.nordlys.space' 
+const DEV_HOSTNAME = 'dev.nordlys.space'
+const PRODUCTION_HOSTNAME = 'nordlys.space'
 
-'window.location.hostname '
+const DEV_SERVER_HOSTNAME = 'server.dev.nordlys.space'
+const PRODUCTION_SERVER_HOSTNAME = 'server.nordlys.space' 
 
 const SCHEMA = 'https'
 
-const SERVER_HOSTNAME = window.location.hostname === PRODUCTION_HOSTNAME ? PRODUCTION_HOSTNAME : DEV_HOSTNAME 
+const SERVER_HOSTNAME = window.location.hostname === PRODUCTION_HOSTNAME ? PRODUCTION_SERVER_HOSTNAME : DEV_SERVER_HOSTNAME 
 
 const SERVER_HOST = SCHEMA + '://' + SERVER_HOSTNAME
 // const SERVER_HOST = 'http://127.0.0.1:8000'
