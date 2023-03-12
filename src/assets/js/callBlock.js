@@ -61,7 +61,6 @@ async function sendReuqestPhoneCall(phone, recaptcha){
 		phone: phone,
 		recaptcha: recaptcha
 	}
-	console.log(data)
 	return await fetch(url, {
 		method: 'POST',
 		headers: {

@@ -1,5 +1,15 @@
-const SERVER_HOST = 'https://server.dev.nordlys.space'
+const DEV_HOSTNAME = 'server.dev.nordlys.space'
+const PRODUCTION_HOSTNAME = 'server.nordlys.space' 
+
+'window.location.hostname '
+
+const SCHEMA = 'https'
+
+const SERVER_HOSTNAME = window.location.hostname === PRODUCTION_HOSTNAME ? PRODUCTION_HOSTNAME : DEV_HOSTNAME 
+
+const SERVER_HOST = SCHEMA + '://' + SERVER_HOSTNAME
 // const SERVER_HOST = 'http://127.0.0.1:8000'
+
 const API_VERSION = 'v1'
 const API_URL = `/api/${API_VERSION}`
 const API_URI = SERVER_HOST + API_URL
