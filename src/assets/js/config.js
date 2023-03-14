@@ -3,7 +3,7 @@ const PRODUCTION_HOSTNAME = 'nordlys.space'
 
 if (window.location.href.indexOf(DEV_HOSTNAME) != -1) {
 	console.log('You are on the DEV_HOSTNAME')
-}else{
+}else if(window.location.href.indexOf(PRODUCTION_HOSTNAME) != -1){
 	console.log('You are on the PRODUCTION_HOSTNAME')
 
 }
