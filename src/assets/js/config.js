@@ -2,11 +2,11 @@ const DEV_HOSTNAME = 'dev.nordlys.space'
 const PRODUCTION_HOSTNAME = 'nordlys.space'
 
 const DEV_SERVER_HOSTNAME = 'server.dev.nordlys.space'
-const PRODUCTION_SERVER_HOSTNAME = 'server.nordlys.space'
+const PRODUCTION_SERVER_HOSTNAME = 'server.nordlys.space' 
 
 const SCHEMA = 'https'
 
-const SERVER_HOSTNAME = window.location.hostname === PRODUCTION_HOSTNAME ? PRODUCTION_SERVER_HOSTNAME : DEV_SERVER_HOSTNAME
+const SERVER_HOSTNAME = window.location.hostname === PRODUCTION_HOSTNAME ? PRODUCTION_SERVER_HOSTNAME : DEV_SERVER_HOSTNAME 
 
 const SERVER_HOST = SCHEMA + '://' + SERVER_HOSTNAME
 // const SERVER_HOST = 'http://127.0.0.1:8000'
@@ -26,12 +26,13 @@ const URLS = {
 
 const SITE_TYPE_DB_ID = 1
 
-function getGoogleAnalyticsTag() {
-	let tag = 0
-	if (window.location.hostname === PRODUCTION_HOSTNAME) {
-		return tag += 1
-	} else {
-		return tag -= 1
+function getGoogleAnalyticsTag(){
+	const tag =  ""
+	if(window.location.hostname === PRODUCTION_HOSTNAME){
+		return console.log('product');
+		
+	}else{
+		return console.log('dev');
 	}
 }
 getGoogleAnalyticsTag()
