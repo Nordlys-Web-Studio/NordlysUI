@@ -1,13 +1,6 @@
 const DEV_HOSTNAME = 'dev.nordlys.space'
 const PRODUCTION_HOSTNAME = 'nordlys.space'
 
-if (window.location.href.indexOf(DEV_HOSTNAME) != -1) {
-	console.log('You are on the DEV_HOSTNAME')
-}else if(window.location.href.indexOf(PRODUCTION_HOSTNAME) != -1){
-	console.log('You are on the PRODUCTION_HOSTNAME')
-
-}
-
 const DEV_SERVER_HOSTNAME = 'server.dev.nordlys.space'
 const PRODUCTION_SERVER_HOSTNAME = 'server.nordlys.space' 
 
@@ -33,6 +26,15 @@ const URLS = {
 
 const SITE_TYPE_DB_ID = 1
 
+function getGoogleAnalyticsTag(){
+	const tag =  ""
+	if(window.location.hostname === PRODUCTION_HOSTNAME){
+		return "PRODUCTION_HOSTNAME"
+	}else{
+		return "DEV_HOSTNAME"
+	}
+}
+getGoogleAnalyticsTag()
 
 function setPopovers() {
 	const popoverTriggerList = document.querySelectorAll(
