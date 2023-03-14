@@ -1,11 +1,9 @@
 const DEV_HOSTNAME = 'dev.nordlys.space'
 const PRODUCTION_HOSTNAME = 'nordlys.space'
 
-if(window.location.href === DEV_HOSTNAME){
-	console.log('dev site')
-}else if(window.location.href === PRODUCTION_HOSTNAME){
-	console.log('production')
-	
+if (window.location.href.indexOf(DEV_HOSTNAME) != -1) {
+	// do stuff for reserve.php page here
+	console.log('123123')
 }
 
 const DEV_SERVER_HOSTNAME = 'server.dev.nordlys.space'
