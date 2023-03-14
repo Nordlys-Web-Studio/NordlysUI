@@ -27,7 +27,7 @@ const URLS = {
 const SITE_TYPE_DB_ID = 1
 
 function getGoogleAnalyticsTag() {
-	const tag = 0
+	let tag = 0
 	if (window.location.hostname === PRODUCTION_HOSTNAME) {
 		return tag += 1
 	} else {
