@@ -296,7 +296,19 @@ header .icon {
 	display: flex;
 	-webkit-box-pack: center;
 	justify-content: center;
-	margin-bottom: 80px;
+	/* top: 50%;
+	transform: translateY(-50%); */
+	margin-bottom: 3.5%;
+}
+@media (max-width: 1400px) {
+	.swiper-pagination {
+		margin-bottom: 1%;
+	}
+}
+@media (max-width: 1600px) {
+	.swiper-pagination {
+		margin-bottom: 2%;
+	}
 }
 
 .swiper-pagination2 {
@@ -1993,11 +2005,11 @@ li:last-child .dropdown-menu  {
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
-@media (max-width:998px) {
-	.face_team img{
+@media (max-width: 998px) {
+	.face_team img {
 		min-height: 300px;
 	}
-	.bg_team h4{
+	.bg_team h4 {
 		font-size: 18px;
 	}
 }
@@ -4788,6 +4800,6 @@ h2 {
 	height: 700px;
 }
 
-.strong-text{
+.strong-text {
 	font-weight: 600;
 }
