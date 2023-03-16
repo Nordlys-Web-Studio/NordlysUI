@@ -225,6 +225,11 @@ header .icon {
 .head_slider .swiper-slide img {
 	height: 100%;
 }
+@media (max-width: 1400px) {
+	.head_slider .swiper-slide .tit_img {
+		height: 80%;
+	}
+}
 
 .head_slider .swiper-slide .tit_img {
 	display: -webkit-box;
@@ -302,12 +307,7 @@ header .icon {
 }
 @media (max-width: 1400px) {
 	.swiper-pagination {
-		margin-bottom: 1%;
-	}
-}
-@media (max-width: 1600px) {
-	.swiper-pagination {
-		margin-bottom: 2%;
+		/* margin-bottom: 2%; */
 	}
 }
 
